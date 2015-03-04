@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "360DOC.Tool", "360DOC.Tool\360DOC.Tool.csproj", "{F73C3E54-9D2A-41EB-8697-1BA0985EFEBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F73C3E54-9D2A-41EB-8697-1BA0985EFEBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F73C3E54-9D2A-41EB-8697-1BA0985EFEBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F73C3E54-9D2A-41EB-8697-1BA0985EFEBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F73C3E54-9D2A-41EB-8697-1BA0985EFEBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

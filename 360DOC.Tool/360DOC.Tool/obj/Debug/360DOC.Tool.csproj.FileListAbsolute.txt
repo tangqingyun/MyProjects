@@ -1,0 +1,5 @@
+F:\qingyun.tang\MyProjects\360DOC.Tool\360DOC.Tool\bin\Debug\360DOC.Tool.exe
+F:\qingyun.tang\MyProjects\360DOC.Tool\360DOC.Tool\bin\Debug\360DOC.Tool.pdb
+F:\qingyun.tang\MyProjects\360DOC.Tool\360DOC.Tool\obj\Debug\360DOC.Tool.csprojResolveAssemblyReference.cache
+F:\qingyun.tang\MyProjects\360DOC.Tool\360DOC.Tool\obj\Debug\360DOC.Tool.exe
+F:\qingyun.tang\MyProjects\360DOC.Tool\360DOC.Tool\obj\Debug\360DOC.Tool.pdb
