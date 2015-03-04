@@ -1,0 +1,3 @@
+./memcached -t 1 -c 4096 -n 10240 -f 1.25 -m 2048 -u nobody -P /var/run/memcached.pid -p 11211 -d
+
+./memcached -t 4 -c 4096 -n 10240 -f 1.25 -m 8192  -p 11211

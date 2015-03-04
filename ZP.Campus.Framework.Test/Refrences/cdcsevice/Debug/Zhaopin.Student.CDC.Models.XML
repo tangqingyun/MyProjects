@@ -1,0 +1,2152 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Zhaopin.Student.CDC.Models</name>
+    </assembly>
+    <members>
+        <member name="P:Zhaopin.Student.CDC.Models.Users.EmailVerifyInfo.status">
+            <summary>
+            状态（0：激活成功，3：重复激活）
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Users.EmailVerifyInfo.JSsUserInfo">
+            <summary>
+             用户cookie
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Enums.CampusPartStatus">
+            <summary>
+            校招阶段状态
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.CampusPartStatus.Waiting">
+            <summary>
+            等待中
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.CampusPartStatus.Ongoing">
+            <summary>
+            进行中
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.CampusPartStatus.completed">
+            <summary>
+            已完成
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.Guests">
+            <summary>
+            嘉宾的业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Guests.GuestName">
+            <summary>
+            嘉宾
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Guests.GuestImg">
+            <summary>
+            嘉宾图片
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Guests.GuestIntroduction">
+            <summary>
+            嘉宾介绍
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfoForList.MinSalary">
+            <summary>
+            平均月薪下线
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfoForList.MaxSalary">
+            <summary>
+            平均月薪上线
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfoForList.MidSalary">
+            <summary>
+            平均月薪
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfoForList.AllCount">
+            <summary>
+            同专业从事职类总人数
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfoForList.CurrCount">
+            <summary>
+            同专业从事该职类的人数
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfoForList.Percentage">
+            <summary>
+            同专业从事该职类的比例
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfoForList.SubJobTypeId">
+            <summary>
+            职位小类编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfoForList.SubJobTypeName">
+            <summary>
+            职位小类名称
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.IndustryCategory">
+            <summary>
+            用户关注的行类实体，包括详情
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryCategory.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryCategory.JobCategoryId">
+            <summary>
+            职位类别ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryCategory.IndustryCategoryId">
+            <summary>
+            行业类别ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryCategory.IndustryCategoryName">
+            <summary>
+            行业类别名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryCategory.IndustryCategoryIntroduction">
+            <summary>
+            行业类别介绍
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryCategory.IndustryCategoryIntroductionImage">
+            <summary>
+            行业类别介绍中的图片
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryCategory.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PersonalBaseInfo.UsermasterId">
+            <summary>
+            用户唯一编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PersonalBaseInfo.Name">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PersonalBaseInfo.PhotoUrl">
+            <summary>
+            个人照片Url
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PersonalBaseInfo.MajorId">
+            <summary>
+            专业id
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PersonalBaseInfo.MajorName">
+            <summary>
+            专业名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PersonalBaseInfo.SchoolId">
+            <summary>
+            学校id
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PersonalBaseInfo.SchoolName">
+            <summary>
+            学校名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PersonalBaseInfo.CId">
+            <summary>
+            用户简历ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PersonalBaseInfo.CIdKey">
+            <summary>
+            加密Key
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Enums.JobNature">
+            <summary>
+            职位性质
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.JobNature.FullTime">
+            <summary>
+            全职
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.JobNature.Practice">
+            <summary>
+            实习
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.JobNature.PartTime">
+            <summary>
+            兼职
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.CmsForImg">
+            <summary>
+            图片cms列表业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForImg.Id">
+            <summary>
+            cms编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForImg.Code">
+            <summary>
+            数据来源编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForImg.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForImg.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForImg.RedirectUrl">
+            <summary>
+            重定向Rrl
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForImg.ImgUrl">
+            <summary>
+            图片地址
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForImg.PlaceholderType">
+            <summary>
+            站位类型（1：占一个位置，2：占两个位置，3:占三个位置）
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForImg.BroadcastTime">
+            <summary>
+            视频宣讲会首播时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForImg.SortNumber">
+            <summary>
+            视频宣讲会首播时间
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.CampusCompanyLogo">
+            <summary>
+            校园招聘首页公司logo业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusCompanyLogo.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusCompanyLogo.LogoUrl">
+            <summary>
+            logo图片地址
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusCompanyLogo.RedirectUrl">
+            <summary>
+            图片链接
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.WendaoUser.email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.WendaoUser.slug">
+            <summary>
+            问道唯一标示
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.WendaoUser.name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.WendaoUser.avatar">
+            <summary>
+            38像素的头像
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Avatar.url">
+            <summary>
+            图片地址
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Avatar.small">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Image.url">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.PositionRelevantQuestion">
+            <summary>
+            职位相关问题业务对象
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PositionRelevantQuestion.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PositionRelevantQuestion.TopicName">
+            <summary>
+            话题名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PositionRelevantQuestion.Title">
+            <summary>
+            问题标题
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PositionRelevantQuestion.Url">
+            <summary>
+            点击跳转的url
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PositionRelevantQuestion.AskedBy">
+            <summary>
+            提问人
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Enums.JobDateSearchType">
+            <summary>
+            搜索职位发布日期类型
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.JobDateSearchType.OneDays">
+            <summary>
+            一天前
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.JobDateSearchType.ThreeDays">
+            <summary>
+            三天前
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.JobDateSearchType.OneWeeks">
+            <summary>
+            一周前
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.JobDateSearchType.TwoWeeks">
+            <summary>
+            两周前
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.PostionCategory">
+            <summary>
+            职位分类业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PostionCategory.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PostionCategory.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PostionCategory.ParentId">
+            <summary>
+            父Id
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.PostionCategory.Childrens">
+            <summary>
+            子分类
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.IndustryInfo">
+            <summary>
+            行业详情业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryInfo.IndustryID">
+            <summary>
+            行业编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryInfo.ParentID">
+            <summary>
+            父编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryInfo.IndustryName">
+            <summary>
+            行业名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryInfo.Introduction">
+            <summary>
+            行业介绍
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryInfo.IntroductionImg">
+            <summary>
+            行业介绍中的图片
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryInfo.CreatedDate">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.CmsForSpecial">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-28
+            Function: 独版cms业务实体
+            类似我的校园首页的热门活动
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForSpecial.Id">
+            <summary>
+            cms编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForSpecial.Code">
+            <summary>
+            数据来源编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForSpecial.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForSpecial.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForSpecial.ImgUrl">
+            <summary>
+            图片URL
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForSpecial.RedirectUrl">
+            <summary>
+            重定向Rrl
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForSpecial.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Enums.Language">
+            <summary>
+            语言
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.Language.CN">
+            <summary>
+            中文
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.Language.EN">
+            <summary>
+            英文
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.Models.CampusProject.GetOngoingPart">
+            <summary>
+            获取进行中的阶段
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusProject.Id">
+            <summary>
+            校园项目编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusProject.Name">
+            <summary>
+            项目名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusProject.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusProject.PublicProgress">
+            <summary>
+            是否公开进度
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusProject.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusProject.EndTime">
+            <summary>
+            网申截止时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusProject.Url">
+            <summary>
+            公司校招URL
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusProject.CampusParts">
+            <summary>
+            网申阶段
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.CampusPart">
+            <summary>
+            招聘环节
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusPart.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusPart.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusPart.SerialNumber">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusPart.StartTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusPart.EndTime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CampusPart.Status">
+            <summary>
+            状态（等待中、进行中、已完成）
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.BaseInfo">
+            <summary>
+            基本信息返回xml业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.BaseInfo.Items">
+            <summary>
+            值列表
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.BaseInfoItem.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.BaseInfoItem.Value">
+            <summary>
+            字段内容
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.VideoPresentation">
+            <summary>
+            视频宣讲会
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.VideoPresentation.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.VideoPresentation.Title">
+            <summary>
+            视频名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.VideoPresentation.VideoImagePath">
+            <summary>
+            视频截图地址地址
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.VideoPresentation.VideoUrl">
+            <summary>
+            视频地址
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.VideoPresentation.BroadcastTime">
+            <summary>
+            首播时间
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.Models.OnlineAppCompany.GetOngoingPart">
+            <summary>
+            获取进行中的阶段
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.OnlineAppCompany.ViewOnlineAppUrl">
+            <summary>
+            网申申请表Url
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.OnlineAppCompany.ViewVolunteerUrl">
+            <summary>
+            投递志愿Url
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.OnlineAppCompany.OnlineAppJobList">
+            <summary>
+            我投递网申职位
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.OnlineAppCompany.CampusParts">
+            <summary>
+            网申阶段
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.MessageInfo.Id">
+            <summary>
+            消息中心生成的消息Id
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.MessageInfo.SourceId">
+            <summary>
+            消息原id,或者相应信息
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.MessageInfo.MsgType">
+            <summary>
+            消息类别大类
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.MessageInfo.MsgSubType">
+            <summary>
+            消息类别小类
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.MessageInfo.Receiver">
+            <summary>
+            接收者,对应用户ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.MessageInfo.Sender">
+            <summary>
+            发送者(显示内容)，可以是用户或公司等
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.MessageInfo.SenderUrl">
+            <summary>
+            发送者Url
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.MessageInfo.SendContent">
+            <summary>
+            消息内容(可以包含连接的一段HTML代码)
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.MessageInfo.SendContentUrl">
+            <summary>
+            消息内容URL
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.MessageInfo.OperateUrl">
+            <summary>
+            功能操作url，例如查看详情等连接
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.MessageInfo.CreateDate">
+            <summary>
+            消息创建时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.MessageInfo.OperateDate">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.MessageInfo.OperateType">
+            <summary>
+            操作类型
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.MessageInfo.IsViewRead">
+            <summary>
+            是否看过直接变为已读
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.MessageInfo.IsRead">
+            <summary>
+            是否已读(1:已读;0:未读)
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.Presentation">
+            <summary>
+            宣讲会业务实体
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.Models.Presentation.IsCutOff">
+            <summary>
+            是否过期
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.SchoolName">
+            <summary>
+            学校名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.CompanyName">
+            <summary>
+            公司名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.CityId">
+            <summary>
+            城市Id
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.City">
+            <summary>
+            城市
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.JobPostion">
+            <summary>
+            职位
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.Address">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.HoldingDate">
+            <summary>
+            举办日期
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.HoldingTime">
+            <summary>
+            举办时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.SignUpNumber">
+            <summary>
+            报名人数
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.Hot">
+            <summary>
+            是否hot
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.Top">
+            <summary>
+            是否置顶
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.TopTime">
+            <summary>
+            置顶时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.Signed">
+            <summary>
+            是否已报名
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.Url">
+            <summary>
+            跳转的Url
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.HadUrl">
+            <summary>
+            是否有URL
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.ShareText">
+            <summary>
+            分享文本
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Presentation.ShareUrl">
+            <summary>
+            分享URl
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.OnlineApplicationSkill">
+            <summary>
+            网申技巧
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.OnlineApplicationSkill.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.OnlineApplicationSkill.Code">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.OnlineApplicationSkill.TopicId">
+            <summary>
+            话题ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.OnlineApplicationSkill.TopicName">
+            <summary>
+            话题名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.OnlineApplicationSkill.AskUrl">
+            <summary>
+            点击问题跳转的url
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.OnlineApplicationSkill.TopicUrl">
+            <summary>
+            点击话题跳转的url
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.OnlineApplicationSkill.Title">
+            <summary>
+            问题标题
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.OnlineApplicationSkill.Url">
+            <summary>
+            点击话题跳转的url
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.OnlineApplicationSkill.AskedBy">
+            <summary>
+            提问人
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.Activity">
+            <summary>
+            活动业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Activity.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Activity.Name">
+            <summary>
+            活动名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Activity.Type">
+            <summary>
+            活动类型： 0是个人 1组队
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.IndustryInfoForList">
+            <summary>
+            行业列表业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryInfoForList.MinSalary">
+            <summary>
+            平均月薪下线
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryInfoForList.MaxSalary">
+            <summary>
+            平均月薪上线
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryInfoForList.MidSalary">
+            <summary>
+            平均月薪
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryInfoForList.AllCount">
+            <summary>
+            从事该职类总人数
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryInfoForList.CurrCount">
+            <summary>
+            该行业从事该职类的人数
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryInfoForList.Percentage">
+            <summary>
+            同专业从事该职类的比例
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryInfoForList.SubIndustryId">
+            <summary>
+            行业小类编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.IndustryInfoForList.SubIndustryName">
+            <summary>
+            行业小类名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserEdu.UsermasterId">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserEdu.OtherSchool">
+            <summary>
+            学校名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserEdu.SchoolID">
+            <summary>
+            学校编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserEdu.OtherMajor">
+            <summary>
+            专业名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserEdu.MajortypeID">
+            <summary>
+            专业编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserEdu.Degree">
+            <summary>
+            学历
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserEdu.EnrolYear">
+            <summary>
+            入学年份
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserEdu.GradYear">
+            <summary>
+            毕业年份
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserEdu.ModifiedDate">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserEdu.CreatedDate">
+            <summary>
+            入库时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserEdu.UserOperationPath">
+            <summary>
+            用户操作路径
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.JobTypeInfo">
+            <summary>
+            职位小类详情业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfo.JobTypeId">
+            <summary>
+            职位小类ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfo.ParentId">
+            <summary>
+            对应职位大类ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfo.CnName">
+            <summary>
+            职类名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfo.Introduction">
+            <summary>
+            职类介绍
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfo.IntroductionImg">
+            <summary>
+            职类介绍中的图片
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfo.Requirements">
+            <summary>
+            通用岗位要求
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfo.NeedPower">
+            <summary>
+            职业所需技能
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobTypeInfo.created_date">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Enums.Source">
+            <summary>
+            职位来源
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.Source.All">
+            <summary>
+            全部
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.Source.Campus">
+            <summary>
+            校招
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.Source.Society">
+            <summary>
+            社招
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.BaseDataCategory.CompanySize">
+            <summary>
+            公司规模
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.BaseDataCategory.CompanyType">
+            <summary>
+            公司性质
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.BaseDataCategory.EmploymentType">
+            <summary>
+            职位工作性质
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.BaseDataCategory.Industry">
+            <summary>
+            行业
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.BaseDataCategory.JobType">
+            <summary>
+            职位大类
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.BaseDataCategory.SubJobType">
+            <summary>
+            职位小类
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.BaseDataCategory.AllSubJobType">
+            <summary>
+            根据大类Id获取小类
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.BaseDataCategory.City">
+            <summary>
+            城市
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.CmsForSimple">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-25
+            Function: 普通cms列表业务实体
+            标题类型的
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForSimple.Id">
+            <summary>
+            cms编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForSimple.Code">
+            <summary>
+            数据来源编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForSimple.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForSimple.TypeName">
+            <summary>
+            类型名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForSimple.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForSimple.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForSimple.IsHot">
+            <summary>
+            是否热点文章
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForSimple.RedirectUrl">
+            <summary>
+            重定向Rrl
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.AskInfo._id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.AskInfo.answered_at">
+            <summary>
+            回答时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.AskInfo.answers_count">
+            <summary>
+            回答数量
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.AskInfo.title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.AskInfo.body">
+            <summary>
+            问题内容
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.AskInfo.last_answer_user_id">
+            <summary>
+            最后回答人ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.AskInfo.created_at">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.AskInfo.user_id">
+            <summary>
+            创建人ID
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.JobTrend">
+            <summary>
+            职业动态业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Article.Id">
+            <summary>
+            文章id
+            </summary>
+        </member>
+        <!-- 对于成员“P:Zhaopin.Student.CDC.Models.Article.Title”忽略有格式错误的 XML 注释 -->
+        <member name="P:Zhaopin.Student.CDC.Models.Article.Intro">
+            <summary>
+            文章简介
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Article.Content">
+            <summary>
+            文章内容
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Article.CreateTime">
+            <summary>
+            简网处理的时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Article.ArticleTime">
+            <summary>
+            文章发布时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Article.Url">
+            <summary>
+            原文连接
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Article.Source">
+            <summary>
+            文章来源名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Article.SourceRank">
+            <summary>
+            来源重要性
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Article.ArtType">
+            <summary>
+            文章类型
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Article.industryCategories">
+            <summary>
+            文章所属行业，可能所属多个行业
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Article.ImgList">
+            <summary>
+            文章图片
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.Enums.ArticleType">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.Enums.ArticleType.Text">
+            <summary>
+            纯文
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.Enums.ArticleType.ImgText">
+            <summary>
+            图文
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.Enums.ArticleType.Img">
+            <summary>
+            纯图
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.VideoCareerTalkDetail">
+            <summary>
+            视频宣讲会业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.VideoCareerTalkDetail.VideoCareerTalkName">
+            <summary>
+            宣讲会名字
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.VideoCareerTalkDetail.VideoUrl">
+            <summary>
+            视频地址
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.VideoCareerTalkDetail.LiveLink">
+            <summary>
+            直播实录的编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.VideoCareerTalkDetail.GuestIntroduction">
+            <summary>
+            嘉宾介绍列表
+            key:照片地址 value：嘉宾介绍
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.VideoCareerTalkDetail.AskLink">
+            <summary>
+            视屏宣讲会论坛编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.VideoCareerTalkDetail.VideoTheme">
+            <summary>
+            视频主题
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.VideoCareerTalkDetail.EnterpriseShow">
+            <summary>
+            企业展示（图片）
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.VideoCareerTalkDetail.LinkAddress">
+            <summary>
+            企业主页面链接地址
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.UserIndustryCategory">
+            <summary>
+            用户关注的行类实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserIndustryCategory.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserIndustryCategory.JobCategoryId">
+            <summary>
+            职位类别ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserIndustryCategory.IndustryCategoryId">
+            <summary>
+            行业类别ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserIndustryCategory.IndustryCategoryName">
+            <summary>
+            行业类别名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserIndustryCategory.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Enums.MessageType">
+            <summary>
+            消息大类
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.MessageType.AllType">
+            <summary>
+            默认所有大类
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.MessageType.ApplyFeedback">
+            <summary>
+            求职反馈
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.MessageType.Invitation">
+            <summary>
+            邀请
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.MessageType.QAndA">
+            <summary>
+            问答
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.MessageType.SysMessage">
+            <summary>
+            系统通知
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.UserJobCategory">
+            <summary>
+            用户关注的职类实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserJobCategory.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserJobCategory.JobCategoryId">
+            <summary>
+            职位类别ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserJobCategory.JobCategoryName">
+            <summary>
+            职位类别名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserJobCategory.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserJobCategory.IndustryCategories">
+            <summary>
+            行业类别
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.Resume.ResumeConverter.GetCampusResumeFrom(Zhaopin.Student.CDC.Resume.GraduatesResume)">
+            <summary>
+            将社招应届生简历转换成校招简历
+            </summary>
+            <param name="graduatesResume"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.Resume.ResumeConverter.GetGraduatesResumeFrom(Zhaopin.Student.CDC.Resume.CampusResume)">
+            <summary>
+            将校招简历转换成社招应届生简历
+            </summary>
+            <param name="campusResume"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Resume.GraduatesResume.Id">
+            <summary>
+            简历Id
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Resume.GraduatesResume.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Resume.GraduatesResume.BirthYear">
+            <summary>
+            出生年
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Resume.GraduatesResume.BirthMouth">
+            <summary>
+            出生月
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.HotTopic.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.HotTopic.Code">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.HotTopic.ImageUrl">
+            <summary>
+            图片URl
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.HotTopic.Avatar">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.HotTopic.TopicId">
+            <summary>
+            话题ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.HotTopic.TopicName">
+            <summary>
+            话题名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.HotTopic.TitleId">
+            <summary>
+            问题ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.HotTopic.Title">
+            <summary>
+            问题标题
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.HotTopic.AskUrl">
+            <summary>
+            点击问题跳转的url
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.HotTopic.TopicUrl">
+            <summary>
+            点击话题跳转的url
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.HotTopic.AskedUserId">
+            <summary>
+            提问人ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.HotTopic.AskedBy">
+            <summary>
+            提问人
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.HotTopic.AskUserUrl">
+            <summary>
+            提问人主页URl
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.HotTopic.AskedNumber">
+            <summary>
+            回答人数
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Enums.SearchType">
+            <summary>
+            搜索类型
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.SearchType.FullTime">
+            <summary>
+            全职
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.SearchType.Campus">
+            <summary>
+            校园招聘
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.SearchType.Practice">
+            <summary>
+            实习
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.Enums.ScheduleItemType.CampusProject">
+            <summary>
+            校园项目
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.Enums.ScheduleItemType.Presentation">
+            <summary>
+            宣讲会
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.Enums.ScheduleItemType.Activity">
+            <summary>
+            活动
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.Education">
+            <summary>
+            Creator:light.hao
+            Date:2012-5-25
+            学历的业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Education.EducationName">
+            <summary>
+            学历名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Education.EducationTime">
+            <summary>
+            取得学历的时间
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.QueryItem">
+            <summary>
+            查询面板项业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.QueryItem.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.QueryItem.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.QueryItem.Count">
+            <summary>
+            该类下数据结果条数
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.Enums.YearsOf">
+            <summary>
+            工作年限
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Enums.OrderType">
+            <summary>
+            作者：jianquan.zheng
+            时间：2012-5-8
+            功能：职业兴趣排序规则
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.OrderType.Default">
+            <summary>
+            默认排序
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.OrderType.PeopleAsc">
+            <summary>
+            按人数排序升序
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.OrderType.PeopleDesc">
+            <summary>
+            按人数排序降序
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.OrderType.SalayAsc">
+            <summary>
+            按月薪排序升序
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.OrderType.SalayDesc">
+            <summary>
+            按月薪排序降序
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.SchoolCity">
+            <summary>
+            Creator:light.hao
+            Date：2012-5-25
+            城市业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.SchoolCity.CityID">
+            <summary>
+            城市ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.SchoolCity.CityName">
+            <summary>
+            城市名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.SchoolCity.CitySchools">
+            <summary>
+            该城市下的学校
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Enums.SortBy">
+            <summary>
+            排序规则
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.SortBy.Relevance">
+            <summary>
+            相关度
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.SortBy.UpdateDate">
+            <summary>
+            更新日期
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.DictionaryObj.Key">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.DictionaryObj.Value">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.School">
+            <summary>
+            Creator:郝伟光
+            Date：2012-5-25
+            学校业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.School.SchoolID">
+            <summary>
+            学校编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.School.SchoolName">
+            <summary>
+            学校的名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.School.CityID">
+            <summary>
+            城市编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.School.SchoolName_En">
+            <summary>
+            学校英文名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.School.School_level">
+            <summary>
+            学校级别
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.School.School_type">
+            <summary>
+            学校类型
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Schedule.Id">
+            <summary>
+            标示
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Schedule.ScheduleItemType">
+            <summary>
+            数据类型
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Schedule.Item">
+            <summary>
+            数据项
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Schedule.Time">
+            <summary>
+            相关提醒的时间
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.OperateType.Delete">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.OperateType.View">
+            <summary>
+            查看
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.OperateType.Accept">
+            <summary>
+            同意
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.OperateType.Ignore">
+            <summary>
+            忽略
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Enums.QueryCategory">
+            <summary>
+            查询条件分类
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.QueryCategory.WorkPlace">
+            <summary>
+            工作地点
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.QueryCategory.PositionCategory">
+            <summary>
+            职位分类
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.QueryCategory.IndustryCategory">
+            <summary>
+            行业分类
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.QueryCategory.CompanyNature">
+            <summary>
+            公司性质
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.QueryCategory.PostDate">
+            <summary>
+            首发日期
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.QueryCategory.PositionSource">
+            <summary>
+            职位来源
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.Enums.JobTrendType.Activity">
+            <summary>
+            活动
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.Enums.JobTrendType.Information">
+            <summary>
+            资讯
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForInfo.Id">
+            <summary>
+            cms编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForInfo.columnid">
+            <summary>
+            栏目编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForInfo.Code">
+            <summary>
+            数据来源url
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForInfo.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForInfo.TypeName">
+            <summary>
+            类型名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForInfo.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForInfo.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForInfo.IsHot">
+            <summary>
+            是否热点文章
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForInfo.RedirectUrl">
+            <summary>
+            重定向Rrl
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForInfo.CreateDate">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForInfo.GotoUrl">
+            <summary>
+            跳转地址
+            </summary>
+            <param name="wendaodomain"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForInfo.LastUpdate">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.CompanyUserEdu">
+            <summary>
+            Creator:light.hao
+            Date:2012.5.29
+            Fun:公司业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CompanyUserEdu.CompanyName">
+            <summary>
+            公司名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CompanyUserEdu.AccountNumber">
+            <summary>
+            公司扩展编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CompanyUserEdu.Status">
+            <summary>
+            公司状态
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CompanyUserEdu.IntroUrl">
+            <summary>
+            公司介绍
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CompanyUserEdu.LogoUrl">
+            <summary>
+            公司LOGO
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CompanyUserEdu.IsConcerned">
+            <summary>
+            公司是否被专注
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CompanyUserEdu.CMPCompanyID">
+            <summary>
+            公司的CMP编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserInfo.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.UserInfo.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobSourceType.CityList">
+            <summary>
+            工作地点
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobSourceType.JobTypeList">
+            <summary>
+            职位类型
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobSourceType.IndustryList">
+            <summary>
+            行业类型
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobSourceType.CompanyTypeList">
+            <summary>
+            公司性质
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobSourceType.CreateDateList">
+            <summary>
+            首发日期
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobSourceType.JobSourceTypeList">
+            <summary>
+            职位来源
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.JobCategory">
+            <summary>
+            用户关注的职类实体，包括详情
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobCategory.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobCategory.JobCategoryId">
+            <summary>
+            职位类别ID
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobCategory.JobCategoryName">
+            <summary>
+            职位类别名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobCategory.JobCategoryIntroduction">
+            <summary>
+            职位描述
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobCategory.JobCategoryIntroductionImage">
+            <summary>
+            职位描述中的图片
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobCategory.JobCategoryRequirements">
+            <summary>
+            职位要求
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobCategory.JobCategoryNeedpower">
+            <summary>
+            职位所需技能
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobCategory.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.JobCategory.IndustryCategories">
+            <summary>
+            行业类别
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.Enums.CmsItemType">
+            <summary>
+            cms项目类型
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.Enums.CmsItemType.unknown">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.Enums.CmsItemType.everyoneinvolvedarticle">
+            <summary>
+            大家都在参与中的文章类型
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.Enums.CmsItemType.campuslogo">
+            <summary>
+            （）校园Logo
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.Enums.CmsItemType.careerscompany">
+            <summary>
+            求贤名企（图片）
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.Enums.CmsItemType.universitynetwork">
+            <summary>
+            高校就业网
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.Enums.CmsItemType.campussocieties">
+            <summary>
+            校园合作社团
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Models.Enums.CmsItemType.campusenterprise">
+            <summary>
+            （我的校园首页左侧）名企校园行
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForVideo.Id">
+            <summary>
+            cms编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForVideo.VideoID">
+            <summary>
+            视频编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForVideo.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForVideo.VideoUrl">
+            <summary>
+            重定向Url（现用作视频播放地址）
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForVideo.ImgUrl">
+            <summary>
+            图片地址
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForVideo.BroadcastTime">
+            <summary>
+            视频宣讲会首播时间
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForVideo.Introduction">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.Major">
+            <summary>
+            作者：邓佑华
+            时间：2012-5-8
+            功能：专业业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Major.MajorID">
+            <summary>
+            专业编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Major.ParentID">
+            <summary>
+            父专业编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.Major.MajorName">
+            <summary>
+            专业名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.ArticleImage.Id">
+            <summary>
+            图片id
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.ArticleImage.ArticleId">
+            <summary>
+            文章id
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.ArticleImage.ImgBaseUrl">
+            <summary>
+            外网原始图片Url
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.ArticleImage.ImgCuttUrl">
+            <summary>
+            剪切图片Url
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.ArticleImage.IsMain">
+            <summary>
+            是否为主图
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Models.CmsForExpert">
+            <summary>
+            专家cms列表业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForExpert.Id">
+            <summary>
+            cms编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForExpert.Code">
+            <summary>
+            数据来源编号
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForExpert.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForExpert.Avatar">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForExpert.Description">
+            <summary>
+            介绍
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForExpert.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForExpert.UserHostPage">
+            <summary>
+            用户主页
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.Models.CmsForExpert.UserAskPage">
+            <summary>
+            用户提问页
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.Enums.PresentationSortField">
+            <summary>
+            排序规则
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.PresentationSortField.TalkDate">
+            <summary>
+            举办日期
+            </summary>
+        </member>
+        <member name="F:Zhaopin.Student.CDC.Enums.PresentationSortField.CreateDt">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+    </members>
+</doc>

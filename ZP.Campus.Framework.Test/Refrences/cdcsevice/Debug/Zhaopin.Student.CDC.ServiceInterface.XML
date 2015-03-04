@@ -1,0 +1,1406 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Zhaopin.Student.CDC.ServiceInterface</name>
+    </assembly>
+    <members>
+        <member name="T:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider">
+            <summary>
+            公共模块服务接口
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetInfomationJobGuide``1(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取求职指导分页数据（根据关键字）
+            </summary>
+            <param name="pageSize">页大小</param>
+            <param name="pageIndex">页码</param>
+            <param name="columnIds">栏目ID</param>
+            <param name="keyword">关键字</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetFamousCompanyVideoPresentations(System.Int32)">
+            <summary>
+            获取知名企业视频宣讲会
+            </summary>
+            <param name="amount">设置返回数据的数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetFamousCompanyVideoPresentations">
+            <summary>
+            作者：邓佑华
+            时间：2012-5-15
+            功能：获取视频宣讲会（返回：null或list列表）
+            </summary>
+            <returns>null或list列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetBaseInfo(System.String,System.String,System.Int32)">
+            <summary>
+            获取基本信息
+            </summary>
+            <param name="baseCategory">数据类型</param>
+            <param name="id">编号</param>
+            <param name="level">获取城市的时候使用 0：全部获取，1：只获取父集，2：只获取子集</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetActivityClickCount(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-29
+            Function: 获取活动点击数量
+            </summary>
+            <param name="activityIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetInformationClickCount(System.Collections.Generic.IEnumerable{System.Int64})">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-29
+            Function: 获取资讯点击数量
+            </summary>
+            <param name="activityIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetCmsItemList``1(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取cms数据列表
+            </summary>
+            <param name="pageSize">页大小</param>
+            <param name="pageIndex">页码</param>
+            <param name="itemType">栏目类型</param>
+            <param name="columnId">栏目编号</param>
+            <param name="keyWord">关键字</param>
+            <returns>cms数据列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetHotTopic(System.String,System.Int32)">
+            <summary>
+            获取热点问题
+            </summary>
+            <param name="item">栏目Id</param>
+            <param name="amount">返回记录条数</param>
+            <returns>热点问题列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetOnlineApplicationSkills(System.Int32)">
+            <summary>
+            获取网申技巧大全
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetCampusCompanyLogos(System.Int32)">
+            <summary>
+            Creator: Li Yang
+            Date: 2012-5-16
+            Function: 获取校园招聘首页广告图片
+            </summary>
+            <param name="amount">获取数量</param>
+            <returns>广告图片列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.AddCmsItemClickCount(Zhaopin.Student.CDC.Models.Enums.CmsItemType,System.String)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 增加cms数据点击数量
+            </summary>
+            <param name="itemType">栏目类型</param>
+            <param name="itemId">数据编号</param>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetCmsItemsClickCount(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-29
+            Function: 获取cms数据的点击数量
+            </summary>
+            <param name="itemIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetEveryoneInvolved">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-28
+            Function：获取大家都在参与数据列表
+            </summary>
+            <returns>大家都在参与数据列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetHotActivity">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-28
+            Function：获取热门活动
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetJobHelp">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-29
+            Function：获取求职大家帮
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetCareersCompanyForSimple">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-30
+            Function：求贤名企（文字）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetCareersCompanyForImage">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-30
+            Function：求贤名企（图片）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetCommunicateWithExpert(Zhaopin.Student.CDC.Controllers.Config.CmsAPIItem,System.String)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-30
+            Function：获取和他们交流模块（未登陆首页）数据
+            </summary>
+            <param name="cmsApiItem">cms配置项</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetUniversityEmploymentNetwork">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-30
+            Function：获取高校就业网数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetCampusCooperationSocieties">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-30
+            Function：获取校园合作社团数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetCampusEnterprise">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-30
+            Function：获取名企校园行数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetHomeJobGuide">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-6-7
+            Function：获取首页职业指导
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetHomePageHotIssues">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-6-6
+            Function：获取首页热点问题
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetCmsItemPageList``1(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            资讯求职指导
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="pageSize"></param>
+            <param name="pageIndex"></param>
+            <param name="columnIds"></param>
+            <param name="keyWord"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetMainInfoByRanColumns(Zhaopin.Student.CDC.Controllers.Config.CmsAPIItem,Zhaopin.Student.CDC.Common.Cache.ModuleType)">
+            <summary>
+            资讯首页随机模块数据
+            </summary>
+            <param name="rancolumns"></param>
+            <param name="mt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetMainInfoByColumn(Zhaopin.Student.CDC.Controllers.Config.CmsAPIItem,Zhaopin.Student.CDC.Common.Cache.ModuleType)">
+            <summary>
+            资讯首页栏目数据
+            </summary>
+            <param name="column"></param>
+            <param name="mt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICommonProvider.GetMainImgsByColumn(Zhaopin.Student.CDC.Controllers.Config.CmsAPIItem,Zhaopin.Student.CDC.Common.Cache.ModuleType)">
+            <summary>
+            资讯首页栏目数据
+            </summary>
+            <param name="column"></param>
+            <param name="mt"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.ServiceInterface.IVideoCareerTalkProvider">
+            <summary>
+            Creator:light.hao
+            Date:2012.6.21
+            Fun:视频宣讲会接口
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IVideoCareerTalkProvider.GetTopVideoCareerTalk">
+            <summary>
+            Creator:light.hao
+            Date:2012.6.21
+            Fun:获取头条信息
+            </summary>
+            <returns>头条信息实体（没内容返回null）</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IVideoCareerTalkProvider.GetFamousVideoCareerTalk">
+            <summary>
+            Creator:light.hao
+            Date:2012.6.21
+            Fun:获取名企视频宣讲会列表
+            </summary>
+            <returns>返回名企视频宣讲会列表（没有内容返回空list）</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IVideoCareerTalkProvider.GetHotVideoCareerTalk">
+            <summary>
+            Creator:light.hao
+            Date:2012.6.21
+            Fun:获取热门企业宣讲会视频
+            </summary>
+            <returns>热门企业宣讲会视频列表（没有内容返回空的list）</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IVideoCareerTalkProvider.GetLatestRecommendVideo">
+            <summary>
+            Creator:light.hao
+            Date:2012.6.21
+            Fun:获取最新推荐视频列表
+            </summary>
+            <returns>获取最新推荐视频列表（没有内容返回空的list）</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IVideoCareerTalkProvider.GetNetworkVideoCareerTalk">
+            <summary>
+            Creator:light.hao
+            Date:2012.6.21
+            Fun:获取网络宣讲会列表
+            </summary>
+            <returns>网络宣讲会列表（没有内容返回空的list）</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IVideoCareerTalkProvider.GetBrandEnterpriseVideo">
+            <summary>
+            Creator:light.hao
+            Date:2012.6.21
+            Fun:获取品牌企业视频列表
+            </summary>
+            <returns>品牌企业视频列表（没有内容返回空的list）</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IVideoCareerTalkProvider.GetVideoCareerTalkInfo(System.Int32)">
+            <summary>
+            Creator:light.hao
+            Date:2012.6.21
+            Fun:获取视频宣讲会详细信息（视频地址，直播实录，嘉宾介绍，视频主题）
+            </summary>
+            <param name="companyID">视频宣讲会编号</param>
+            <returns>获取视频宣讲会详细信息（没有信息返回NULL）</returns>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.ServiceInterface.IJobPositionProvider">
+            <summary>
+            职位服务接口
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IJobPositionProvider.GetLatestPositions(System.Int64,Zhaopin.Student.CDC.Enums.Source,System.Collections.Generic.IList{Zhaopin.Student.CDC.Enums.JobNature},System.Int32,System.Boolean)">
+            <summary>
+            获取最新职位
+            </summary>
+            <param name="cityId">城市Id，当为0时查询所有城市最新职位</param>
+            <param name="jobSource">职位类型</param>
+            <param name="jobNatures">职位性质</param>
+            <param name="amount">返回记录条数</param>
+            <returns>职位列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IJobPositionProvider.GetLatestPositions(System.Int64,System.Int32,System.Boolean)">
+            <summary>
+            获取最新职位
+            </summary>
+            <param name="cityId">城市Id，当为0时查询所有城市最新职位</param>
+            <param name="amount">返回记录条数</param>
+            <returns>职位列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IJobPositionProvider.GetJobsByCondition(System.Int32,System.Int32,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String})">
+            <summary>
+            查询职位
+            </summary>
+            <param name="pageSize">每页记录数</param>
+            <param name="pageNumber">页码</param>
+            <param name="industryCategories">行业类别</param>
+            <param name="jobCategories">职位类别</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IJobPositionProvider.GetJobsByCondition(System.Int32,System.Int32,System.Collections.Generic.IList{Zhaopin.Student.CDC.Enums.JobNature},System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},System.String,System.Collections.Generic.IList{System.Int64},System.Boolean)">
+            <summary>
+            查询职位
+            </summary>
+            <param name="pageSize">每页记录数</param>
+            <param name="pageNumber">页码</param>
+            <param name="positionNatures">职位性质</param>
+            <param name="industryCategories">行业类别</param>
+            <param name="positionCategories">职位类别</param>
+            <param name="keyWord">关键字</param>
+            <param name="cityId">城市</param>
+            <param name="searchPanel">是否需要展示查询面板</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IJobPositionProvider.GetJobsByCondition(System.Int32,System.Int32,Zhaopin.Student.CDC.Enums.Source,System.Collections.Generic.IList{Zhaopin.Student.CDC.Enums.JobNature},System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},System.String,System.Collections.Generic.IList{System.Int64},System.Nullable{System.Int32},System.Nullable{Zhaopin.Student.CDC.Enums.JobDateSearchType},Zhaopin.Student.CDC.Enums.SortBy,System.Collections.Generic.IList{Zhaopin.Student.CDC.Enums.QueryCategory})">
+            <summary>
+            查询职位
+            </summary>
+            <param name="pageSize">每页记录数</param>
+            <param name="pageNumber">页码</param>
+            <param name="jobSource">职位来源</param>
+            <param name="jobNatures">职位性质</param>
+            <param name="industryCategories">行业类别</param>
+            <param name="positionCategories">职位类别</param>
+            <param name="keyWord">关键字</param>
+            <param name="cityId">城市</param>
+            <param name="companyNature">公司性质</param>
+            <param name="postdate">职位首发日期</param>
+            <param name="sortBy">排序规则</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IJobPositionProvider.GetJobsCountByCondition(System.Collections.Generic.IList{Zhaopin.Student.CDC.Enums.JobNature})">
+            <summary>
+            Creator: jianquan.zheng
+            Data: 2012-5-24
+            Function: 根据职位性质查询职位记录数量
+            </summary>
+            <param name="jobNatures">职位性质</param>
+            <returns>职位数量</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IJobPositionProvider.GetJobsCountByCondition(Zhaopin.Student.CDC.Enums.Source,System.Collections.Generic.IList{Zhaopin.Student.CDC.Enums.JobNature},System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.Int64},System.Nullable{System.Int32})">
+            <summary>
+            Creator: jianquan.zheng
+            Data: 2012-5-24
+            Function: 根据相应条件查询职位记录数量
+            </summary>
+            <param name="jobSource">职位来源</param>
+            <param name="jobNatures">职位性质</param>
+            <param name="industryCategories">行业类别</param>
+            <param name="positionCategories">职位类别</param>
+            <param name="cityId">城市</param>
+            <param name="companyNature">公司性质</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IJobPositionProvider.GetJobPosition(System.String,Zhaopin.Student.CDC.Enums.Source)">
+            <summary>
+            获取职位
+            </summary>
+            <param name="jobPositionNumber">职位扩展编号</param>
+            <param name="source">职位来源</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IJobPositionProvider.GetJobPositionList(System.String,Zhaopin.Student.CDC.Enums.Source)">
+            <summary>
+            Creator: Li Yang
+            Data: 2012-5-17
+            Function: 从平台服务获取职位列表信息
+            </summary>
+            <param name="jobPositionNumber">职位扩展编号（多个，用逗号分隔）</param>
+            <param name="source">数据来源</param>
+            <returns>职位列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IJobPositionProvider.GetJobPositionList(System.Collections.Generic.IDictionary{System.String,System.Int32})">
+            <summary>
+            Creator: Li Yang
+            Data: 2012-5-17
+            Function: 从平台服务获取职位列表信息
+            </summary>
+            <param name="jobNumbers">职位扩展编号和来源的字典</param>
+            <returns>职位列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMyCampusProvider.GetLatestActivityList(System.Int32)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取最新活动
+            </summary>
+            <param name="amount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMyCampusProvider.GetLatestJobTrendList(System.Collections.Generic.IList{System.String})">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取最新职业动态
+            </summary>
+            <param name="amount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMyCampusProvider.GetLatestActivity">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取最新职业动态中的活动
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMyCampusProvider.GetScheduleListByUserId(System.Int64)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取日程提醒信息
+            </summary>
+            <param name="userId">用户ID</param>
+            <param name="amount">显示数量，0不限制</param>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMyCampusProvider.GetScheduleList">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取日程提醒信息
+            </summary>
+            <param name="userId">用户ID</param>
+            <param name="amount">显示数量，0不限制</param>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMyCampusProvider.GetPersonalBaseInfo(System.Int64)">
+            <summary>
+            Creator: jianquan.zheng
+            Date: 2012-6-13
+            Function: 获取用户基本信息
+            </summary>
+            <param name="userId">用户ID</param>
+            <returns>用户基本信息对象</returns>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.ServiceInterface.IUserEduProvider">
+            <summary>
+            作者:邓佑华
+            时间：2012-5-8
+            功能：用户基本信息接口
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IUserEduProvider.AddOrUpdateUserEdu(Zhaopin.Student.CDC.Models.UserEdu)">
+            <summary>
+            添加或修改用户基本信息
+            </summary>
+            <param name="ue">基本信息实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IUserEduProvider.GetSchoolByProID(System.Int32)">
+            <summary>
+            根据省份编号获取学校信息
+            </summary>
+            <param name="provinceID">省份编号</param>
+            <returns>学校列表或null</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IUserEduProvider.GetMajorByID(System.Int32)">
+            <summary>
+            根据专业编号获取专业信息
+            </summary>
+            <param name="majorID">专业编号</param>
+            <returns>专业列表或null</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IUserEduProvider.GetMajorByParentID(System.Int32)">
+            <summary>
+            根据父编号获取专业列表
+            </summary>
+            <param name="parentID">父编号</param>
+            <returns>专业列表或null</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMyApplyProvider.GetMyOnlineAppInfo(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            获取用户网申信息(只返回进行中的网申进程)
+            </summary>
+            <param name="UserId">用户唯一编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMyApplyProvider.GetMyOnlineAppInfoWithAllCampusPart(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            获取用户网申信息（返回所有网申进程）
+            </summary>
+            <param name="UserId"></param>
+            <param name="pageSize"></param>
+            <param name="pageNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMyApplyProvider.GetMyOnlineAppRootCompanyIds(System.Int64)">
+            <summary>
+            获取用户网申根公司信息
+            </summary>
+            <param name="UserId">用户唯一编号</param>
+            <returns>根公司id列表</returns>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.ServiceInterface.IInfomationProvider">
+            <summary>
+            资讯接口
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IInfomationProvider.GetArticleByIndustry(System.Collections.Generic.IList{System.String},System.Int32)">
+            <summary>
+            根据行业编号获取资讯信息
+            </summary>
+            <param name="industryCategories">行业编号列表</param>
+            <param name="amount">设置返回资讯数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IInfomationProvider.GetArticleByIndustry(System.Int32)">
+            <summary>
+            获取资讯信息
+            </summary>
+            <param name="amount">设置返回资讯数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IInfomationProvider.GetArticlesByIndustry(System.String,System.Int32,System.Int32)">
+            <summary>
+            根据行业获取资讯信息
+            </summary>
+            <param name="industryCateId">行业编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IInfomationProvider.GetArticlesByIndustry(System.Collections.Generic.IList{System.String},System.Int32,System.Int32)">
+            <summary>
+            根据行业获取资讯信息
+            </summary>
+            <param name="industryCateId">行业编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IInfomationProvider.GetArticlesByHotspot">
+            <summary>
+            获取热点文章列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IInfomationProvider.GetAllArticles(System.Int32,System.Int32)">
+            <summary>
+            获取所有文章
+            </summary>
+            <param name="pageSize"></param>
+            <param name="pageNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IInfomationProvider.SearchByArticleTitle(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            根据标题搜索资讯
+            </summary>
+            <param name="keyWord"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IInfomationProvider.ContentInfo(System.String@,System.Int64)">
+            <summary>
+            获取内容单页数据 上一篇 当前 下一篇 三篇文章
+            </summary>
+            <param name="industryCateId"></param>
+            <param name="articleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IUserProvider.RecordUserInvitedOperation(System.Int64,System.Guid@)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-6-20
+            Fuction: 记录用户邀请的操作
+            </summary>
+            <param name="userMasterId">用户ID</param>
+            <param name="inviteCode">邀请码</param>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IUserProvider.RecordUserRegisterByInvited(System.Int64,System.Guid)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-6-20
+            Fuction: 记录用户被邀请的操作
+            </summary>
+            <param name="userMasterId">用户ID</param>
+            <param name="inviteCode">邀请码</param>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.ServiceInterface.IActivityProvider">
+            <summary>
+            活动相关业务接口
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IActivityProvider.GetUserActivitiesSchedule(System.Int64,System.DateTime,System.DateTime)">
+            <summary>
+            获取用户相关活动日程
+            </summary>
+            <param name="userMasterId"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IActivityProvider.GetActivitiesSchedule(System.DateTime,System.DateTime)">
+            <summary>
+            获取相关活动日程
+            </summary>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IActivityProvider.GetLatestActivities(System.Int32)">
+            <summary>
+            获取最新活动
+            </summary>
+            <param name="amount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMessageProvider.GetMsgByMsgType(System.Int64,Zhaopin.Student.CDC.Enums.MessageType,System.Int32,System.Int32)">
+            <summary>
+            获取不同种类未读消息数量,需要查看后设置为已读的,在获取数据时直接置为已读
+            </summary>
+            <param name="UserId">用户ID</param>
+            <param name="msgType">消息类型大类(求职反馈:10,邀请:20,问答:30,系统通知:40)</param>
+            <param name="pageSize">每页记录数</param>
+            <param name="pageNumber">页码</param>
+            <returns>消息列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMessageProvider.DelMsgById(System.Int64)">
+            <summary>
+            根据消息id删除消息
+            </summary>
+            <param name="id">消息id</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMessageProvider.SaveOperate(System.Int64,System.Int64,System.Int32)">
+            <summary>
+            根据消息id保存用户操作
+            </summary>
+            <param name="userId">用户id</param>
+            <param name="id">消息id</param>
+            <param name="operateType">用户操作类型</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMessageProvider.SaveUserIgnore(System.Int64,System.Int32,System.String)">
+            <summary>
+            保存用户忽略
+            </summary>
+            <param name="userId">用户id</param>
+            <param name="msgSubType">消息小类</param>
+            <param name="sourceId">源id</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMessageProvider.GetUnreadMsgCount(System.Int64)">
+            <summary>
+            获取不同种类未读消息数量
+            </summary>
+            <param name="userId">用户Id</param>
+            <returns>所有消息大类未读消息数量列表(求职反馈:10,邀请:20,问答:30,系统通知:40)</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMessageProvider.GetUnreadMsgCount(System.Int64,Zhaopin.Student.CDC.Enums.MessageType)">
+            <summary>
+            获取不同种类未读消息数量
+            </summary>
+            <param name="userId">用户Id</param>
+            <param name="msgType">消息类型大类(求职反馈:10,邀请:20,问答:30,系统通知:40)</param>
+            <returns>消息大类未读消息数量列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IMessageProvider.GetRdSysInvMsgBody(System.String)">
+            <summary>
+            获取RD系统传来消息的消息体
+            </summary>
+            <param name="pageUrl">页面url</param>
+            <returns></returns>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.ServiceInterface.ICampusProjectProvider">
+            <summary>
+            校园项目服务接口
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICampusProjectProvider.GetCampusProjectCitys">
+            <summary>
+            获取网申进程所有城市
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICampusProjectProvider.GetLatestPostCampusProjects(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            获取校园最新发布的校园项目
+            </summary>
+            <param name="cityId">城市Id，为0时查询所有城市</param>
+            <param name="amount">返回数据条数</param>
+            <param name="isSearchProvince">是否查询省</param>
+            <returns>公司列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICampusProjectProvider.GetCampusProjectsByKeyWord(System.Int32,System.Int32,System.String,System.Collections.Generic.IEnumerable{System.String},System.Int32,System.Int32,System.Boolean)">
+             <summary>
+             根据关键字获取校园项目
+             </summary>
+            <param name="pageSize">每页纪记录数</param>
+             <param name="pageNumber">页码，从1开始</param>
+             <param name="keyWord">关键字</param>
+             <param name="industrys">行业类别</param>
+             <param name="cityId">城市ID</param>
+             <param name="partId">招聘环节编号</param>
+             <param name="IsSearchProvince">是否查询省</param>
+             <returns>校园职位列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICampusProjectProvider.GetCampusPartBaseInfo">
+            <summary>
+            获取网申进程阶段
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICampusProjectProvider.GetCampusProjectSchedule(System.Int64,System.Int32,System.DateTime)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取校园招聘日程
+            </summary>
+            <param name="userId">用户Id</param>
+            <param name="amount">显示数量，0不限制</param>
+            <param name="date">日期</param>
+            <returns>校园招聘日程信息</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICampusProjectProvider.GetCampusProjectCount">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-6-8
+            Function: 获取全部校园项目数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICampusProjectProvider.GetCampusOnlineAppInfo(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            Creator: jianquan.zheng
+            Date: 2012-6-11
+            Function: 根据rd编号获取校园项目及网申进程信息列表（多个rd编号用逗号隔开）
+            </summary>
+            <param name="RootCompanyIds"></param>
+            <param name="StartDate"></param>
+            <param name="EndDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICampusProjectProvider.GetCampusOnlineAppInfo(System.DateTime,System.DateTime)">
+            <summary>
+            Creator: jianquan.zheng
+            Date: 2012-6-11
+            Function: 获取所有校园项目及网申进程信息列表（多个rd编号用逗号隔开）
+            </summary>
+            <param name="RootCompanyIds"></param>
+            <param name="StartDate"></param>
+            <param name="EndDate"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.ServiceInterface.IPresentationProvider">
+            <summary>
+            宣讲会服务接口
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IPresentationProvider.GetHotPresentations(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            获取热门宣讲会
+            </summary>
+            <param name="userId">用户ID</param>
+            <param name="cityId">城市ID</param>
+            <param name="amount">设置返回数据的数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IPresentationProvider.GetPresentations(System.Int32,System.Int32,System.Int64,System.Int64,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            查询宣讲会
+            </summary>
+            <param name="pageSize">页大小</param>
+            <param name="pageNumber">页码</param>
+            <param name="userId">用户ID</param>
+            <param name="cityId">城市ID</param>
+            <param name="schoolName">学校名称</param>
+            <param name="companyName">企业名称</param>
+            <param name="startTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IPresentationProvider.GetPresentations(System.Int32,System.Int32,System.Int64,System.Int64,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Boolean,Zhaopin.Student.CDC.Enums.PresentationSortField,System.Boolean)">
+            <summary>
+            查询宣讲会
+            </summary>
+            <param name="pageSize">页大小</param>
+            <param name="pageNumber">页码</param>
+            <param name="userId">用户ID</param>
+            <param name="cityId">城市ID</param>
+            <param name="schoolName">学校名称</param>
+            <param name="companyName">企业名称</param>
+            <param name="startTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <param name="isShowHot">是否显示置顶操作</param>
+            <param name="sortField">排序字段</param>
+            <param name="ascending">是否升序排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IPresentationProvider.SignUp(System.Int64,System.Int64)">
+            <summary>
+            报名宣讲会
+            </summary>
+            <param name="userId"></param>
+            <param name="presentationId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IPresentationProvider.CancelSignUp(System.Int64,System.Int64)">
+            <summary>
+            Creator: edmund.li
+            Data: 2012-7-3
+            Function: 取消报名的宣讲会
+            </summary>
+            <param name="userId">用户Id</param>
+            <param name="presentationId">宣讲会Id</param>
+            <returns>返回布尔值</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IPresentationProvider.GetPresentationCities">
+            <summary>
+            获取有宣讲会的所有城市
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IPresentationProvider.GetUserPresentationSchedule(System.Int64,System.DateTime,System.DateTime)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取用户相关的宣讲会日程
+            </summary>
+            <param name="userId">用户Id</param>
+            <param name="startTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <returns>宣讲会日程信息</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IPresentationProvider.GetAllPresentationSchedule(System.DateTime,System.DateTime)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取宣讲会日程
+            </summary>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IPresentationProvider.GetUserPresentations(System.Int32,System.Int32,System.Int64)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-6-13
+            Function: 获取用户报名的宣讲会
+            </summary>
+            <param name="userMasterId"></param>
+            <param name="cutOffTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IPresentationProvider.GetPresentationCount">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-6-8
+            Function: 获取宣讲会总数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICompanyProvider.GetCompany(System.String,Zhaopin.Student.CDC.Enums.Source,System.Boolean)">
+            <summary>
+            获取公司信息
+            </summary>
+            <param name="companyNumber">公司编号</param>
+            <param name="source">数据来源</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICompanyProvider.GetComapnyByInduIds(System.Collections.Generic.IList{System.String})">
+            <summary>
+            根据多个行类编号获取企类列表
+            </summary>
+            <param name="induIds">行类编号列表</param>
+            <returns>行类列表或null</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICompanyProvider.GetUserCompany(System.Int64)">
+            <summary>
+            作者：邓佑华
+            时间：2012-5-14
+            功能：根据用户编号获取用户关注的公司信息 返回（list列表）
+            </summary>
+            <param name="userMasterId">用户编号</param>
+            <returns>list列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICompanyProvider.GetSubcompanysByParent(System.Int64,System.Boolean)">
+            <summary>
+            Creator:light.hao
+            Date:2012.6.20
+            Fun:根据总公司编号获取子公司列表
+            </summary>
+            <param name="parentID">总公司编号</param>
+            <returns>子公司列表（返回list，空的话返回空list）</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICompanyProvider.GetSubcompanyCountByParent(System.Int64,System.Boolean)">
+            <summary>
+            Creator:light.hao
+            Date:2012.8.30
+            Fun:获取该公司下的分公司个数
+            </summary>
+            <param name="parentID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICompanyProvider.GetJobPositionForCompany(System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Creator:light.hao
+            Date:2012.6.20
+            Fun:获取公司的职位列表
+            </summary>
+            <param name="companyID">公司编号</param>
+            <returns>本公司下的所有职位（公司名称和公司职位编号（job_position_number））</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICompanyProvider.GetCustomizedApplicationFormUrlByRootCompanyId(System.Int64)">
+            <summary>
+            Creator:light.hao
+            Date:2012.8.24
+            Fun:获取定制系统申请表站点的访问地址
+            </summary>
+            <param name="rootCompanyId">总公司id</param>
+            <returns>返回定制系统申请表站点的访问地址</returns>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider">
+            <summary>
+            作者：邓佑华
+            时间：2012-5-8
+            功能：职业生涯信息的接口
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetUserConcernJobCategoryCount(System.Int64)">
+            <summary>
+            获取用户关注的职业类别数量
+            </summary>
+            <param name="userMasterId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.ConcernCompanies(System.Int64,System.Collections.Generic.IList{System.String})">
+            <summary>
+            批量关注企业，数量从0-n 返回值(0：操作失败，1：操作成功,2：数据库操作失败，3：传入的参数不合法)
+            </summary>
+            <param name="userId">用户编号</param>
+            <param name="companyIds">企业编号列表</param>
+            <returns>返回值(0：操作失败，1：操作成功,2：数据库操作失败，3：传入的参数不正确)</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.ConcernJobType(System.Int64,System.Collections.Generic.IList{System.String})">
+            <summary>
+            批量关注职类信息，最多关注三个职类 返回值(0：操作失败，1：操作成功,2：数据库操作失败，3：传入的参数不合法)
+            </summary>
+            <param name="userId">用户编号</param>
+            <param name="jobIds">职类编号列表</param>
+            <returns>返回值(0：操作失败，1：操作成功,2：数据库操作失败，3：传入的参数不合法)</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.ConcernIndurty(System.Int64,System.String,System.Collections.Generic.IList{System.String})">
+            <summary>
+            批量关注行类信息，最多关注9个行类 返回值(0：操作失败，1：操作成功,2：数据库操作失败，3：传入的参数不合法)
+            </summary>
+            <param name="userId">用户编号</param>
+            <param name="job_type_id">职类编号</param>
+            <param name="indurtyIds">行类编号列表</param>
+            <returns>返回值(0：操作失败，1：操作成功,2：数据库操作失败，3：传入的参数不合法)</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.ConcernIndurty(System.Int64,System.String,System.String)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-6-1
+            Function: 关注行类信息
+            </summary>
+            <param name="userId">用户编号</param>
+            <param name="sub_jobtype_id">职位小类编号</param>
+            <param name="indurtyId">行业编号</param>
+            <returns>返回值(-1表示数据操作出错 0表示关注失败 1表示关注成功 2表示已关注 3表示超过关注数量)</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetHotJob">
+            <summary>
+            获取热门职类列表
+            </summary>
+            <returns>职类列表或null</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetJobTypeByMajorID(System.Int32,System.String,Zhaopin.Student.CDC.Models.Enums.YearsOf,Zhaopin.Student.CDC.Enums.OrderType)">
+            <summary>
+            Creator: jianquan.zheng
+            Date: 2012-5-25
+            Function: 根据专业编号获取职类列表
+            </summary>
+            <param name="majorId">专业编号</param>
+            <param name="jobFieldId">职位领域编号</param>
+            <param name="yearsOf">年限</param>
+            <param name="orderType">排序类别1表示默认，2表示按人数比例，3表示按月薪</param>
+            <returns>职类列表或null</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetFieldInfoByMajorID(System.Int32)">
+            <summary>
+            Creator: jianquan.zheng
+            Date: 2012-5-25
+            Function: 根据专业编号获取领域信息列表
+            </summary>
+            <param name="majorId">专业编号</param>
+            <returns>领域信息列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetFieldInfo">
+            <summary>
+            Creator: jianquan.zheng
+            Date: 2012-5-25
+            Function: 获取领域信息列表
+            </summary>
+            <returns>领域信息列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetJobTypeInfoById(System.String)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取职位类别详情
+            </summary>
+            <param name="jobTypeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetIndustryByJobTypeId(System.String,Zhaopin.Student.CDC.Models.Enums.YearsOf,Zhaopin.Student.CDC.Enums.OrderType)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取行业类别列表
+            </summary>
+            <param name="jobTypeId">职业编号</param>
+            <param name="yearsOf">年限</param>
+            <param name="orderType">排序类别1表示默认，2表示按人数比例，3表示按月薪</param>
+            <returns>职类列表或null</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetIndustryInfoById(System.String)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取行业类别详情
+            </summary>
+            <param name="industryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetShoolCities">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取所有学校城市
+            </summary>
+            <returns>所有学校城市</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetShoolCityJsonData(System.String@,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="cityList"></param>
+            <param name="citySchools"></param>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetMajorJsonData(System.String@,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="parentMajors"></param>
+            <param name="sonMajors"></param>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetShoolsByCityId(System.Int64)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 根据城市Id获取该城市下的所有大学
+            </summary>
+            <param name="cityId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetAllMajors">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取所有专业
+            </summary>
+            <returns>所有专业</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetEducation">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取学历列表
+            </summary>
+            <returns>学历列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetEntranceDate">
+            <summary>
+            Creator: edmund.li  
+            Date: 2012-5-24
+            Function: 获取入学年份列表
+            </summary>
+            <returns>入学年份列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.SaveUserEdu(Zhaopin.Student.CDC.Models.UserEdu)">
+            <summary>
+            Creator: edmund.li  
+            Date: 2012-5-24
+            Function: 保存用户的教育信息
+            </summary>
+            <param name="userEdu">用户的教育信息</param>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetUserEdu(System.Int64)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-5-24
+            Function: 获取用户教育信息
+            </summary>
+            <param name="userMastorId">用户教育信息</param>
+            <returns>用户教育信息</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.DelUserEdu(System.Int64)">
+            <summary>
+            Creator:light.hao
+            Date:2012.5.26
+            Function: 物理删除用户信息
+            </summary>
+            <param name="userMasterID">用户编号</param>
+            <returns>成功：true，失败：false</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetUserSubJobType(System.Int64)">
+            <summary>
+            Creator: jianquan.zheng
+            Date: 2012-5-25
+            获取用户关注的职业类别
+            </summary>
+            <param name="userMasterId">用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetUserJobCatAndIndustryCat(System.Int64)">
+            <summary>
+            Creator: edmund.li
+            【职业兴趣也用】
+            获取用户关注的职业类别和行业类别
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetUserJobCatDetailsAndIndustryCatDetails(System.Int64)">
+            <summary>
+            Creator：light.hao
+            时间：2012-6-13
+            功能: 根据用户编号获取用户关注的职类和行类信息,包括职类和行类的详情信息(包括职业描述，职业要求，行业介绍等信息)
+            </summary>
+            <param name="userId">用户编号</param>
+            <returns>null或list列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.ConcernJobType(System.Int64,System.String)">
+            <summary>
+            关注职类 返回值(-1表示数据操作出错 0表示关注失败 1表示关注成功 2表示已关注 3表示超过关注数量)
+            </summary>
+            <param name="userMasterId">用户ID</param>
+            <param name="jobCategoryId">职位类别ID</param>
+            <returns>返回值(-1表示数据操作出错 0表示关注失败 1表示关注成功 2表示已关注 3表示超过关注数量)</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.CancelConcernJob(System.Int64,System.String)">
+            <summary>
+            作者：邓佑华
+            时间：2012-5-8
+            功能：取消关注职类
+            </summary>
+            <param name="userMasterId">用户编号</param>
+            <param name="jobId">职类编号</param>
+            <returns>返回值(0：操作失败，1：操作成功)</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.CancelConcernIndustry(System.Int64,System.String,System.String)">
+            <summary>
+            作者：邓佑华
+            时间：2012-5-8
+            功能：取消关注行类
+            </summary>
+            <param name="userMasterId">用户编号</param>
+            <param name="industryId">行类编号</param>
+            <returns>返回值(0：操作失败，1：操作成功)</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetWorkExperienceDic">
+            <summary>
+            Creator：jianquan.zheng
+            Date：2012-05-28
+            获取工作年限范围列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetCompanyByUserIndus(System.String,System.Int64)">
+            <summary>
+            Creator:light.hao
+            Date:2012.5.30
+            Fun:传入用户所关注行业推算公司
+            </summary>
+            <param name="indArr">用户所关注的行业编号列表</param>
+            <param name="userMasterID">用户Id</param>
+            <returns>返回公司列表</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.ConcernCompany(System.Int64,System.String)">
+            <summary>
+            关注公司 返回值（-1数据库操作失败 0表示关注公司失败 1表示关注成功 2表示已关注了该公司）
+            </summary>
+            <param name="userMasterID">用户ID</param>
+            <param name="companyNumber">公司编号</param>
+            <returns>返回值(-1数据库操作失败 0表示关注公司失败 1表示关注成功 2表示已关注了该公司)</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.CancelConcernCompany(System.Int64,System.String)">
+            <summary>
+            取消关注公司
+            </summary>
+            <param name="userMasterID">用户编号</param>
+            <param name="companyNumber">公司编号</param>
+            <returns>0表示取消关注公司失败 1表示取消关注成功 2表示没关注了该公司</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.JudgeCompanyIsConcerned(System.Int64,System.String)">
+            <summary>
+            Creator:light.hao
+            Date:2012.8.28
+            Fun:根据用户编号和公司编号判断公司是否已被关注
+            </summary>
+            <param name="usermasterid">用户编号</param>
+            <param name="companyNumber">公司编号</param>
+            <returns>已关注返回true</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetConcernedCompanys(System.Int64)">
+            <summary>
+            Creator:light.hao
+            Date:2012.5.30
+            Fun:根据用户的编号返回所关注的公司扩展编号
+            </summary>
+            <param name="userMasterID">用户编号</param>
+            <returns>用户专注公司的编号</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetConcernedCompanys(System.Int64,System.Int32)">
+            <summary>
+            Creator:light.hao
+            Date:2012.8.1
+            Fun:根据用户的编号返回所关注的前几个公司
+            </summary>
+            <param name="userMasterID"></param>
+            <param name="amount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetConcernedCompanyList(System.Int64)">
+            <summary>
+            Creator:light.hao
+            Date:2012.6.6
+            Fun:根据用户的编号返回所关注的公司实体
+            </summary>
+            <param name="userMasterID">用户编号</param>
+            <returns>用户关注公司的实体</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetCompanyListFromCmp(System.Collections.Generic.IList{System.String})">
+            <summary>
+            Creator:light.hao
+            Date:2012.8.2
+            Fun:从CMP接口获取公司信息
+            </summary>
+            <param name="cmplist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetConcernedCompanyListFromDB(System.Collections.Generic.IList{System.String})">
+            <summary>
+            Creator:light.hao
+            Date:2012.8.2
+            Fun:从数据库获取公司信息
+            </summary>
+            <param name="cmplist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetConcernedCompanyList(System.Int64,System.Int32)">
+            <summary>
+            Creator:jianquan.zheng
+            Date:2012-07-31
+            Fun:根据用户的编号返回相应数量所关注的公司实体
+            </summary>
+            <param name="userMasterID">用户编号</param>
+            <param name="amount">关注公司数量</param>
+            <returns>用户关注公司的实体</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetCompanyBaseInfoList(System.Collections.Generic.IList{System.String})">
+            <summary>
+            Creator:light.hao
+            Date:2012.8.2
+            Fun: 获取公司基本信息（cmp编号，公司名称（cmp获得），公司扩展编号）
+            </summary>
+            <param name="cmplist">公司cmp编号列表</param>
+            <param name="amount">获取的公司个数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetCompanyBaseInfoList(System.Int64,System.Int32)">
+            <summary>
+            Creator:light.hao
+            Date:2012.8.2
+            Fun: 获取公司基本信息（cmp编号，公司名称（cmp获得），公司扩展编号）
+            </summary>
+            <param name="cmplist">用户编号</param>
+            <param name="amount">获取的公司个数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.ICareerProvider.GetCompanyBaseInfoList(System.Int64)">
+            <summary>
+            Creator:light.hao
+            Date:2012.8.2
+            Fun: 获取公司基本信息（cmp编号，公司名称（cmp获得），公司扩展编号）
+            </summary>
+            <param name="cmplist">用户编号</param>
+            <param name="amount">获取的公司个数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IWendaoProvider.GetWendaoUserByEmail(System.String)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-6-19
+            Function: 获取问道用户信息(根据邮箱)
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IWendaoProvider.GetWendaoUserByUserId(System.String)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-6-21
+            Function: 获取问道用户信息（根据用户ID）
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IWendaoProvider.RegisterWendaoUser(System.String)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-6-19
+            Function:注册问道用户
+            </summary>
+            <param name="email">注册人的email</param>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IWendaoProvider.GetWendaoAskInfos(System.Collections.Generic.IList{System.String})">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-6-19
+            Function: 根据问道问题Id列表获取问题信息（暂只获取回答人和回答人数信息）
+            </summary>
+            <param name="askIds">问道问题Id列表</param>
+            <returns>问题信息</returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IWendaoProvider.BulkAsked(System.Collections.Generic.IList{System.String},System.String,System.String,System.Int64,System.Boolean)">
+            <summary>
+            Creator: edmund.li
+            Date: 2012-6-19
+            Function: 批量提问
+            </summary>
+            <param name="emails">被提问人的email列表</param>
+            <param name="askTitle">问题标题</param>
+            <param name="askBody">问题内容</param>
+            <param name="userMasterId">提问人Id</param>
+            <param name="onlyHim">是否只允许被提问人回答</param>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.ServiceInterface.IResumeProvider">
+            <summary>
+            校园简历业务接口
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IResumeProvider.HadCampusResume(System.Int32)">
+            <summary>
+            是否存在校招简历
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IResumeProvider.GetCampusResume(System.Int32,Zhaopin.Student.CDC.Enums.Language)">
+            <summary>
+            获取校招简历
+            </summary>
+            <param name="userId"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Zhaopin.Student.CDC.ServiceInterface.IResumeProvider.GetGraduatesResume(System.Int32,Zhaopin.Student.CDC.Enums.Language)">
+            <summary>
+            获取社招应届生简历
+            </summary>
+            <param name="userId"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

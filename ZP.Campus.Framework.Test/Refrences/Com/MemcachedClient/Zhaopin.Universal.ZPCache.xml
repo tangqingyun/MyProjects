@@ -1,0 +1,621 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Zhaopin.Universal.ZPCache</name>
+    </assembly>
+    <members>
+        <member name="T:Zhaopin.Universal.ZPCache.ICacheStrategy">
+            <summary>
+            缓存策略接口
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.Add``1(System.String,``0)">
+            <summary>
+            新增缓存项
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <returns>
+            返回新增缓存项是否成功？
+            </returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.AddByFileChange``1(System.String,``0,System.String)">
+            <summary>
+            新增缓存项(单文件依赖)
+            当指定的文件或目录更改时,该缓存项会自动移除
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependency_file_full_path">
+            监控的文件或目录全路径.
+            当该资源更改时,该缓存项过时,并从缓存中移除.
+            </param>
+            <returns>
+            返回新增缓存项是否成功？
+            </returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.AddByFileChange``1(System.String,``0,System.String[])">
+            <summary>
+            新增缓存项(依赖一组文件)
+            监控一组文件或目录,当文件或目录发生变化时,该缓存项会自动移除
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependencyFileArray">
+            监控的一组文件或目录.
+            当这些资源中的任何一个更改时,该缓存项过时,并从缓存中移除.
+            </param>
+            <returns>
+            返回新增缓存项是否成功？
+            </returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.AddByFileChange``1(System.String,``0,System.String,System.Double)">
+            <summary>
+            新增缓存项(单文件依赖)
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependency_file_full_path">监控的文件或目录全路径.</param>
+            <param name="seconds">当前时间过多少秒该缓存项过期</param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.AddByFileChange``1(System.String,``0,System.String,System.DateTime)">
+            <summary>
+            新增缓存项(单文件依赖)
+            如果监控的文件或目录的上次修改时间晚于monitorStartDate参数指定的时间,
+            则该缓存项从cache中移除.
+            如果监控的一组文件或目录不存在,则直接清除该缓存项.
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependency_file_full_path">
+            监控的文件或目录全路径.
+            </param>
+            <param name="absoluteExpiration">
+            该缓存项过期时间
+            所插入对象将到期并被从缓存中移除的时间。要避免可能的本地时间问题（例如从标准时间改为夏时制），请使用 UtcNow 而不是 Now 作为此参数值。
+            </param>
+            <returns>
+            返回新增缓存项是否成功？
+            </returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.AddByFileChange``1(System.String,``0,System.String[],System.Double)">
+            <summary>
+            新增缓存项(依赖一组文件)
+            </summary>
+            <remarks>
+            如果监控的一组文件或目录中任意对象的上次修改时间晚于monitorStartDate参数指定的时间,
+            则该缓存项从cache中移除.
+            </remarks>
+            <typeparam name="T"></typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependencyFileArray">监控的一组文件或目录.</param>
+            <param name="seconds">当前时间过多少秒该缓存项过期</param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.AddByFileChange``1(System.String,``0,System.String[],System.DateTime)">
+            <summary>
+            新增缓存项(依赖一组文件)
+            </summary>
+            <remarks>
+            如果监控的一组文件或目录中任意对象的上次修改时间晚于monitorStartDate参数指定的时间,
+            则该缓存项从cache中移除.
+            </remarks>
+            <typeparam name="T"></typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependencyFileArray">
+            监控的一组文件或目录.
+            </param>
+            <param name="absoluteExpiration">
+            该缓存项过期时间
+            所插入对象将到期并被从缓存中移除的时间。要避免可能的本地时间问题（例如从标准时间改为夏时制），请使用 UtcNow 而不是 Now 作为此参数值。
+            </param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.AddByFileChange``1(System.String,``0,System.Web.Caching.CacheDependency,System.DateTime)">
+            <summary>
+            新增缓存项
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependency">
+            所依赖的CacheDependency类的另一个实例.
+            </param>
+            <param name="absoluteExpiration">
+            该缓存项过期时间
+            </param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.AddByFileChange``1(System.String,``0,System.String,System.Web.Caching.CacheItemRemovedCallback)">
+            <summary>
+            新增缓存项
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependency_file_full_path">监控的文件或目录全路径</param>
+            <param name="callback">
+            回调的委托
+            在从缓存中移除对象时将调用的委托.当从缓存中删除应用程序的对象时,可使用它来通知应用程序.
+            </param>
+            <returns>
+            返回新增缓存项是否成功？
+            </returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.AddByFileChangeAndCacheKeys``1(System.String,``0,System.String[])">
+            <summary>
+            新增缓存项        
+            如果cacheKeys参数指定的Cache对象发生了更改,则从cache中自动移除该缓存项
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="cacheKeys">
+            一组缓存键,新对象监视它们的更改,如果其中一个键发生更改,
+            与此依赖项对象关联的缓存对象即过时,并从缓存中清除
+            </param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.AddByFileChangeAndCacheKeys``1(System.String,``0,System.String[],System.String[])">
+            <summary>
+            新增缓存项
+            如果文件系统中未找到dependencyFileArray参数中指定的任何目录或文件,则它们将被视为丢失;
+            如果再将带有依赖项的对象添加到cache时目录或文件丢失,则创建该目录或文件时从Cache移除缓存对象.
+            如果cacheKeys参数指定的Cache对象发生了更改,则从cache中自动移除该缓存项
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependencyFileArray">
+            监控的一组文件或目录.
+            </param>
+            <param name="cacheKeys">
+            一组缓存键,新对象监视它们的更改,如果其中一个键发生更改,
+            与此依赖项对象关联的缓存对象即过时,并从缓存中清除
+            </param>
+            <returns>
+            返回新增缓存项是否成功？
+            </returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.AddByFileChange``1(System.String,``0[],System.String[])">
+            <summary>
+            新增缓存项（依赖一组缓存项内容)
+            </summary>
+            <remarks>
+            <para>依赖一组已存在的缓存项的值，如果其中一个缓存项的值发生变化，则从cache中自动移除该缓存项</para>
+            </remarks>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="cacheKeys">cache中已经存在的一组缓存项</param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.AddByFileChange``1(System.String,``0[0:,0:],System.String[])">
+            <summary>
+            新增缓存项（依赖一组缓存项内容)
+            </summary>
+            <remarks>
+            <para>依赖一组已存在的缓存项的值，如果其中一个缓存项的值发生变化，则从cache中自动移除该缓存项</para>
+            </remarks>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="cacheKeys">cache中已经存在的一组缓存项</param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.RemoveObject(System.String)">
+            <summary>
+            移除指定的缓存项
+            </summary>
+            <param name="cache_key">缓存键名称</param>
+            <returns>返回是否成功移除指定缓存项？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.Clear">
+            <summary>
+            清除缓存
+            </summary>
+            <returns>返回是否成功清除缓存。</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.List">
+            <summary>
+            列表显示缓存键值信息
+            </summary>
+            <returns>返回所有缓存项key名称列表</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.IsExists(System.String)">
+            <summary>
+            根据缓存项key判断该缓存项是否存在
+            </summary>
+            <param name="cache_key">缓存键名称</param>
+            <returns>
+            <para>true -- 表示该缓存项存在。</para>
+            <para>false -- 表示该缓存项不存在。</para>
+            </returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.RetrieveObject``1(System.String,``0@)">
+            <summary>
+            获取指定Key的缓存内容
+            </summary>
+            <typeparam name="T">缓存项内容类型</typeparam>
+            <param name="cache_key">缓存项key名称</param>
+            <param name="value">缓存项内容</param>
+            <returns>返回是否成功获取指定缓存项内容</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.RetrieveObject``1(System.String,``0[]@)">
+            <summary>
+            获取指定Key的缓存内容
+            </summary>
+            <typeparam name="T">缓存项内容类型</typeparam>
+            <param name="cache_key">缓存项key名称</param>
+            <param name="value">缓存项内容</param>
+            <returns>返回是否成功获取指定缓存项内容</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.ICacheStrategy.RetrieveObject``1(System.String,``0[0:,0:]@)">
+            <summary>
+            获取指定Key的缓存内容
+            </summary>
+            <typeparam name="T">缓存项内容类型</typeparam>
+            <param name="cache_key">缓存项key名称</param>
+            <param name="value">缓存项内容</param>
+            <returns>返回是否成功获取指定缓存项内容</returns>
+        </member>
+        <member name="P:Zhaopin.Universal.ZPCache.ICacheStrategy.TimeOut">
+            <summary>
+            缓存项过期时间(可读可写)
+            </summary>
+            <value>缓存项过期时间。默认缓存存活期为1440分钟（24个小时）</value>
+        </member>
+        <member name="T:Zhaopin.Universal.ZPCache.DefaultCacheStrategy">
+            <summary>
+            默认缓存策略操作类
+            </summary>
+            <remarks>
+            <para>如果当前应用程序目录存在这样的文件（AppDomain.CurrentDomain.BaseDirectory + @"\config\ClearList.xml"），则会将所有缓存项设置为过期</para>
+            <para>默认缓存存活期为1440分钟（24个小时）</para>
+            </remarks>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.#ctor(System.Web.Caching.Cache)">
+            <summary>
+            构造方法
+            </summary>
+            <remarks>
+            <para>如果当前应用程序目录存在这样的文件（AppDomain.CurrentDomain.BaseDirectory + @"\config\ClearList.xml"），则会将所有缓存项设置为过期</para>
+            </remarks>
+            <param name="cache">Cache对象</param>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.Add``1(System.String,``0)">
+            <summary>
+            新增缓存项
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <returns>
+            返回新增缓存项是否成功？
+            </returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.Add``1(System.String,``0,System.DateTime)">
+            <summary>
+            新增缓存项(指定绝对过期时间)
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="expireDate">该缓存项过期时间</param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.AddByFileChange``1(System.String,``0,System.String)">
+            <summary>
+            新增缓存项(单文件依赖)
+            当指定的文件或目录更改时,该缓存项会自动移除
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependency_file_full_path">
+            监控的文件或目录全路径.
+            当该资源更改时,该缓存项过时,并从缓存中移除.
+            </param>
+            <returns>
+            返回新增缓存项是否成功？
+            </returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.AddByFileChange``1(System.String,``0,System.String[])">
+            <summary>
+            新增缓存项(依赖一组文件)
+            监控一组文件或目录,当文件或目录发生变化时,该缓存项会自动移除
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependencyFileArray">
+            监控的一组文件或目录.
+            当这些资源中的任何一个更改时,该缓存项过时,并从缓存中移除.
+            </param>
+            <returns>
+            返回新增缓存项是否成功？
+            </returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.AddByFileChange``1(System.String,``0,System.String,System.Double)">
+            <summary>
+            新增缓存项(单文件依赖)
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependency_file_full_path">监控的文件或目录全路径.</param>
+            <param name="seconds">当前时间过多少秒该缓存项过期</param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.AddByFileChange``1(System.String,``0,System.String,System.DateTime)">
+            <summary>
+            新增缓存项(单文件依赖)
+            如果监控的文件或目录的上次修改时间晚于monitorStartDate参数指定的时间,
+            则该缓存项从cache中移除.
+            如果监控的一组文件或目录不存在,则直接清除该缓存项.
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependency_file_full_path">
+            监控的文件或目录全路径.
+            </param>
+            <param name="absoluteExpiration">
+            该缓存项过期时间
+            所插入对象将到期并被从缓存中移除的时间。要避免可能的本地时间问题（例如从标准时间改为夏时制），请使用 UtcNow 而不是 Now 作为此参数值。
+            </param>
+            <returns>
+            返回新增缓存项是否成功？
+            </returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.AddByFileChange``1(System.String,``0,System.String[],System.Double)">
+            <summary>
+            新增缓存项(依赖一组文件)
+            </summary>
+            <remarks>
+            如果监控的一组文件或目录中任意对象的上次修改时间晚于monitorStartDate参数指定的时间,
+            则该缓存项从cache中移除.
+            </remarks>
+            <typeparam name="T"></typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependencyFileArray">监控的一组文件或目录.</param>
+            <param name="seconds">当前时间过多少秒该缓存项过期</param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.AddByFileChange``1(System.String,``0,System.String[],System.DateTime)">
+            <summary>
+            新增缓存项(依赖一组文件)
+            </summary>
+            <remarks>
+            如果监控的一组文件或目录中任意对象的上次修改时间晚于monitorStartDate参数指定的时间,
+            则该缓存项从cache中移除.
+            </remarks>
+            <typeparam name="T"></typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependencyFileArray">
+            监控的一组文件或目录.
+            </param>
+            <param name="absoluteExpiration">
+            该缓存项过期时间
+            所插入对象将到期并被从缓存中移除的时间。要避免可能的本地时间问题（例如从标准时间改为夏时制），请使用 UtcNow 而不是 Now 作为此参数值。
+            </param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.AddByFileChangeAndCacheKeys``1(System.String,``0,System.String[])">
+            <summary>
+            新增缓存项        
+            如果cacheKeys参数指定的Cache对象发生了更改,则从cache中自动移除该缓存项
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="cacheKeys">
+            一组缓存键,新对象监视它们的更改,如果其中一个键发生更改,
+            与此依赖项对象关联的缓存对象即过时,并从缓存中清除
+            </param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.AddByFileChangeAndCacheKeys``1(System.String,``0,System.String[],System.String[])">
+            <summary>
+            新增缓存项
+            如果文件系统中未找到dependencyFileArray参数中指定的任何目录或文件,则它们将被视为丢失;
+            如果再将带有依赖项的对象添加到cache时目录或文件丢失,则创建该目录或文件时从Cache移除缓存对象.
+            如果cacheKeys参数指定的Cache对象发生了更改,则从cache中自动移除该缓存项
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependencyFileArray">
+            监控的一组文件或目录.
+            </param>
+            <param name="cacheKeys">
+            一组缓存键,新对象监视它们的更改,如果其中一个键发生更改,
+            与此依赖项对象关联的缓存对象即过时,并从缓存中清除
+            </param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.AddByFileChange``1(System.String,``0,System.Web.Caching.CacheDependency,System.DateTime)">
+            <summary>
+            新增缓存项
+            </summary>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependency">
+            所依赖的CacheDependency类的另一个实例.
+            </param>
+            <param name="absoluteExpiration">
+            该缓存项过期时间
+            </param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.AddByFileChange``1(System.String,``0,System.String,System.Web.Caching.CacheItemRemovedCallback)">
+            <summary>
+            新增缓存项
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="dependency_file_full_path">监控的文件或目录全路径</param>
+            <param name="callback">
+            回调的委托
+            在从缓存中移除对象时将调用的委托.当从缓存中删除应用程序的对象时,可使用它来通知应用程序.
+            </param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.AddByFileChange``1(System.String,``0[],System.String[])">
+            <summary>
+            新增缓存项（依赖一组缓存项内容)
+            </summary>
+            <remarks>
+            <para>依赖一组已存在的缓存项的值，如果其中一个缓存项的值发生变化，则从cache中自动移除该缓存项</para>
+            </remarks>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="cacheKeys">cache中已经存在的一组缓存项</param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.AddByFileChange``1(System.String,``0[0:,0:],System.String[])">
+            <summary>
+            新增缓存项（依赖一组缓存项内容)
+            </summary>
+            <remarks>
+            <para>依赖一组已存在的缓存项的值，如果其中一个缓存项的值发生变化，则从cache中自动移除该缓存项</para>
+            </remarks>
+            <typeparam name="T">需要缓存的值类型</typeparam>
+            <param name="cache_key">缓存键名称</param>
+            <param name="cache_value">缓存内容</param>
+            <param name="cacheKeys">cache中已经存在的一组缓存项</param>
+            <returns>返回新增缓存项是否成功？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.RemoveObject(System.String)">
+            <summary>
+            移除指定的缓存项
+            </summary>
+            <param name="cache_key">缓存键名称</param>
+            <returns>返回是否成功移除指定缓存项？</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.Clear">
+            <summary>
+            清除缓存
+            </summary>
+            <returns>返回是否成功清除缓存。</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.List">
+            <summary>
+            列表显示缓存键值信息
+            </summary>
+            <returns>返回所有缓存项key名称列表</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.IsExists(System.String)">
+            <summary>
+            根据缓存项key判断该缓存项是否存在
+            </summary>
+            <param name="cache_key">缓存键名称</param>
+            <returns>
+            <para>true -- 表示该缓存项存在。</para>
+            <para>false -- 表示该缓存项不存在。</para>
+            </returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.RetrieveObject``1(System.String,``0@)">
+            <summary>
+            获取指定Key的缓存内容
+            </summary>
+            <typeparam name="T">缓存项内容类型</typeparam>
+            <param name="cache_key">缓存项key名称</param>
+            <param name="value">缓存项内容</param>
+            <returns>返回是否成功获取指定缓存项内容</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.RetrieveObject``1(System.String,``0[]@)">
+            <summary>
+            获取指定Key的缓存内容
+            </summary>
+            <typeparam name="T">缓存项内容类型</typeparam>
+            <param name="cache_key">缓存项key名称</param>
+            <param name="value">缓存项内容</param>
+            <returns>返回是否成功获取指定缓存项内容</returns>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.RetrieveObject``1(System.String,``0[0:,0:]@)">
+            <summary>
+            获取指定Key的缓存内容
+            </summary>
+            <typeparam name="T">缓存项内容类型</typeparam>
+            <param name="cache_key">缓存项key名称</param>
+            <param name="value">缓存项内容</param>
+            <returns>返回是否成功获取指定缓存项内容</returns>
+        </member>
+        <member name="P:Zhaopin.Universal.ZPCache.DefaultCacheStrategy.TimeOut">
+            <summary>
+            缓存项过期时间(可读可写)
+            </summary>
+            <value>缓存项过期时间。默认缓存存活期为1440分钟（24个小时）</value>
+        </member>
+        <member name="T:Zhaopin.Universal.ZPCache.CacheExtensionMethod">
+            <summary>
+            扩充System.Web.Caching命名空间的Extension Method
+            </summary>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.CacheExtensionMethod.Clear(System.Web.Caching.Cache)">
+            <summary>
+            清除所有缓存信息
+            </summary>
+            <param name="x">cache对象</param>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.CacheExtensionMethod.List(System.Web.Caching.Cache)">
+            <summary>
+            获取所有缓存项列表
+            </summary>
+            <param name="x">cache对象</param>
+            <returns>
+            返回所有Cache key列表
+            </returns>
+        </member>
+        <member name="T:Zhaopin.Universal.ZPCache.CacheManager">
+            <summary>
+            .net自带Cache操作类
+            </summary>
+            <remarks>
+            <para>如果当前应用程序目录存在这样的文件（AppDomain.CurrentDomain.BaseDirectory + @"\config\ClearList.xml"），则会将所有缓存项设置为过期</para>
+            <para>默认缓存存活期为1440分钟（24个小时）</para>
+            </remarks>
+            <example>
+            本示例说明如何使用缓存
+            <code lang="CS" title="CacheManager Object">
+                   ICacheStrategy objCache = CacheManager.getInstance();
+                   //写cache
+                   IDictionary&lt;string, string&gt; dic = new Dictionary&lt;string, string&gt;();
+                   dic.Add("aa", "aaa");
+                   dic.Add("bb", "bbb");
+                   dic.Add("cc", "ccc");
+                   objCache.Add&lt;IDictionary&lt;string, string&gt;&gt;("testdic", dic);
+                   //读cache
+                   IDictionary&lt;string, string&gt; value;
+                   if (objCache.RetrieveObject&lt;IDictionary&lt;string, string&gt;&gt;("testdic", out value))
+                   {
+                       foreach (KeyValuePair&lt;string, string&gt; item in value)
+                       {
+                           Response.Write(item.Value + "&lt;br/&gt;");
+                       }
+                   }
+            </code>
+            </example>
+        </member>
+        <member name="M:Zhaopin.Universal.ZPCache.CacheManager.getInstance">
+            <summary>
+            创建ICacheStrategy实例
+            </summary>
+            <returns>返回ICacheStrategy实例</returns>
+        </member>
+    </members>
+</doc>

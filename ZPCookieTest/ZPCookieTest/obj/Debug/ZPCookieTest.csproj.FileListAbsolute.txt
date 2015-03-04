@@ -1,0 +1,7 @@
+F:\qingyun.tang\MyProjects\ZPCookieTest\ZPCookieTest\bin\Debug\ZPCookieTest.exe
+F:\qingyun.tang\MyProjects\ZPCookieTest\ZPCookieTest\bin\Debug\ZPCookieTest.pdb
+F:\qingyun.tang\MyProjects\ZPCookieTest\ZPCookieTest\bin\Debug\Zhaopin.PlatformOpen.Final.dll
+F:\qingyun.tang\MyProjects\ZPCookieTest\ZPCookieTest\bin\Debug\Zhaopin.PlatformOpen.Final.pdb
+F:\qingyun.tang\MyProjects\ZPCookieTest\ZPCookieTest\obj\Debug\ZPCookieTest.csprojResolveAssemblyReference.cache
+F:\qingyun.tang\MyProjects\ZPCookieTest\ZPCookieTest\obj\Debug\ZPCookieTest.exe
+F:\qingyun.tang\MyProjects\ZPCookieTest\ZPCookieTest\obj\Debug\ZPCookieTest.pdb

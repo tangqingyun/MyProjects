@@ -1,0 +1,6 @@
+F:\qingyun.tang\MyProjects\AutoMapper.Test\AutoMapper.Test\bin\Debug\AutoMapper.Test.exe
+F:\qingyun.tang\MyProjects\AutoMapper.Test\AutoMapper.Test\bin\Debug\AutoMapper.Test.pdb
+F:\qingyun.tang\MyProjects\AutoMapper.Test\AutoMapper.Test\obj\Debug\AutoMapper.Test.csprojResolveAssemblyReference.cache
+F:\qingyun.tang\MyProjects\AutoMapper.Test\AutoMapper.Test\obj\Debug\AutoMapper.Test.exe
+F:\qingyun.tang\MyProjects\AutoMapper.Test\AutoMapper.Test\obj\Debug\AutoMapper.Test.pdb
+F:\qingyun.tang\MyProjects\AutoMapper.Test\AutoMapper.Test\bin\Debug\AutoMapper.dll

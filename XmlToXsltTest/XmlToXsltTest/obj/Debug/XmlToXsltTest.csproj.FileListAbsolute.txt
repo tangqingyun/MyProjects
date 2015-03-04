@@ -1,0 +1,5 @@
+F:\qingyun.tang\MyProjects\XmlToXsltTest\XmlToXsltTest\bin\XmlToXsltTest.dll
+F:\qingyun.tang\MyProjects\XmlToXsltTest\XmlToXsltTest\bin\XmlToXsltTest.pdb
+F:\qingyun.tang\MyProjects\XmlToXsltTest\XmlToXsltTest\obj\Debug\XmlToXsltTest.csprojResolveAssemblyReference.cache
+F:\qingyun.tang\MyProjects\XmlToXsltTest\XmlToXsltTest\obj\Debug\XmlToXsltTest.dll
+F:\qingyun.tang\MyProjects\XmlToXsltTest\XmlToXsltTest\obj\Debug\XmlToXsltTest.pdb

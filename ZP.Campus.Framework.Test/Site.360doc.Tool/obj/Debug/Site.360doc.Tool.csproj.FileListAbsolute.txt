@@ -1,0 +1,12 @@
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.Tool\bin\Debug\Site.360doc.Tool.exe
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.Tool\bin\Debug\Site.360doc.Tool.pdb
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.Tool\bin\Debug\ZP.Campus.Framework.Core.dll
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.Tool\bin\Debug\Zhaopin.PlatformOpen.Final.dll
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.Tool\bin\Debug\IBatisNet.DataMapper.dll
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.Tool\bin\Debug\IBatisNet.Common.dll
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.Tool\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.Tool\bin\Debug\ZP.Campus.Framework.Core.pdb
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.Tool\obj\Debug\Site.360doc.Tool.csprojResolveAssemblyReference.cache
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.Tool\obj\Debug\Site.360doc.Tool.exe
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.Tool\obj\Debug\Site.360doc.Tool.pdb
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.Tool\bin\Debug\HtmlAgilityPack.dll

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Zhaopin.Student.CDC.WCF.Models</name>
+    </assembly>
+    <members>
+        <member name="T:Zhaopin.Student.CDC.WCF.Models.LastedJobPositionList">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.WCF.Models.JobPositionForSolr">
+            <summary>
+            职位索引业务实体
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.WCF.Models.JobPositionForSolr.Docuemnt">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.WCF.Models.Docuemnt.Fields">
+            <summary>
+            字段列表
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.WCF.Models.Field.Name">
+            <summary>
+            字段名称
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.WCF.Models.Field.Text">
+            <summary>
+            字段内容
+            </summary>
+        </member>
+        <member name="T:Zhaopin.Student.CDC.WCF.Models.LastedJobPosition">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.WCF.Models.LastedJobPosition.CompanyName">
+            <summary>
+            A标签
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.WCF.Models.LastedJobPosition.Style">
+            <summary>
+            样式
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.WCF.Models.LastedJobPosition.Target">
+            <summary>
+            跳转方式
+            </summary>
+        </member>
+        <member name="P:Zhaopin.Student.CDC.WCF.Models.LastedJobPosition.Target2">
+            <summary>
+            跳转方式
+            </summary>
+        </member>
+    </members>
+</doc>

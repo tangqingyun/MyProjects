@@ -1,0 +1,5 @@
+F:\qingyun.tang\MyProjects\SolrResume.Test\SolrResume.Test\bin\SolrResume.Test.dll
+F:\qingyun.tang\MyProjects\SolrResume.Test\SolrResume.Test\bin\SolrResume.Test.pdb
+F:\qingyun.tang\MyProjects\SolrResume.Test\SolrResume.Test\obj\Debug\SolrResume.Test.csprojResolveAssemblyReference.cache
+F:\qingyun.tang\MyProjects\SolrResume.Test\SolrResume.Test\obj\Debug\SolrResume.Test.dll
+F:\qingyun.tang\MyProjects\SolrResume.Test\SolrResume.Test\obj\Debug\SolrResume.Test.pdb

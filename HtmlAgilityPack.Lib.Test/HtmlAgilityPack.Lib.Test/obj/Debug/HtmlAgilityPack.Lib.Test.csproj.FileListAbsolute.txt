@@ -1,0 +1,6 @@
+F:\qingyun.tang\MyProjects\HtmlAgilityPack.Lib.Test\HtmlAgilityPack.Lib.Test\bin\HtmlAgilityPack.Lib.Test.dll
+F:\qingyun.tang\MyProjects\HtmlAgilityPack.Lib.Test\HtmlAgilityPack.Lib.Test\bin\HtmlAgilityPack.Lib.Test.pdb
+F:\qingyun.tang\MyProjects\HtmlAgilityPack.Lib.Test\HtmlAgilityPack.Lib.Test\obj\Debug\HtmlAgilityPack.Lib.Test.dll
+F:\qingyun.tang\MyProjects\HtmlAgilityPack.Lib.Test\HtmlAgilityPack.Lib.Test\obj\Debug\HtmlAgilityPack.Lib.Test.pdb
+F:\qingyun.tang\MyProjects\HtmlAgilityPack.Lib.Test\HtmlAgilityPack.Lib.Test\bin\HtmlAgilityPack.dll
+F:\qingyun.tang\MyProjects\HtmlAgilityPack.Lib.Test\HtmlAgilityPack.Lib.Test\obj\Debug\HtmlAgilityPack.Lib.Test.csprojResolveAssemblyReference.cache

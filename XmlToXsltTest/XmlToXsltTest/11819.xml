@@ -1,0 +1,1452 @@
+﻿<resume>
+  <module_60>
+    <filed_246>
+      <Text>不同意</Text>
+      <Value>3</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_246>
+  </module_60>
+  <person_info>
+    <name>
+      <Text>张三</Text>
+      <Value>张三</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </name>
+    <gender>
+      <Text>女</Text>
+      <Value>2</Value>
+      <FieldType>4</FieldType>
+      <IsRequired>True</IsRequired>
+    </gender>
+    <birth>
+      <Text>1991-01-01</Text>
+      <Value>1991-01-01</Value>
+      <FieldType>6</FieldType>
+      <IsRequired>True</IsRequired>
+    </birth>
+    <politics_bg>
+      <Text>团员</Text>
+      <Value>4</Value>
+      <FieldType>4</FieldType>
+      <IsRequired>True</IsRequired>
+    </politics_bg>
+    <stature>
+      <Text>180</Text>
+      <Value>180</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </stature>
+    <avoirdupois>
+      <Text>50</Text>
+      <Value>50</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </avoirdupois>
+    <nation>
+      <Text>汉族</Text>
+      <Value>1</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </nation>
+    <filed_253>
+      <Text>未婚</Text>
+      <Value>2</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_253>
+    <filed_247>
+      <Text>未育</Text>
+      <Value>3</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_247>
+    <filed_201>
+      <Text>上海</Text>
+      <Value />
+      <FieldType>7</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_201>
+    <filed_201_city>
+      <Text>上海</Text>
+      <Value>上海</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_201_city>
+    <filed_201_city_id>
+      <Text>538</Text>
+      <Value>538</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_201_city_id>
+    <filed_201_province>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_201_province>
+    <filed_201_province_id>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_201_province_id>
+    <id_card_type>
+      <Text>其他全职</Text>
+      <Value>2</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </id_card_type>
+    <id_card>
+      <Text>1234567</Text>
+      <Value>1234567</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </id_card>
+    <filed_256>
+      <Text>大学本科</Text>
+      <Value>2</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_256>
+    <filed_257>
+      <Text>1年</Text>
+      <Value>2</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_257>
+    <filed_258>
+      <Text>北京大学</Text>
+      <Value>北京大学</Value>
+      <FieldType>8</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_258>
+    <filed_258_school_id>
+      <Text>1</Text>
+      <Value>1</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_258_school_id>
+    <graduation_date>
+      <Text>2014-06-02</Text>
+      <Value>2014-06-02</Value>
+      <FieldType>6</FieldType>
+      <IsRequired>True</IsRequired>
+    </graduation_date>
+    <filed_259>
+      <Text>材料工程技术</Text>
+      <Value>材料工程技术</Value>
+      <FieldType>9</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_259>
+    <filed_259_major_id>
+      <Text>62</Text>
+      <Value>62</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_259_major_id>
+    <filed_259_major_type>
+      <Text>材料类</Text>
+      <Value>材料类</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_259_major_type>
+    <filed_259_major_type_id>
+      <Text>1</Text>
+      <Value>1</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_259_major_type_id>
+    <filed_260>
+      <Text>否是</Text>
+      <Value>2</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_260>
+    <nowlocated>
+      <Text>北京</Text>
+      <Value />
+      <FieldType>7</FieldType>
+      <IsRequired>True</IsRequired>
+    </nowlocated>
+    <nowlocated_city>
+      <Text>北京</Text>
+      <Value>北京</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </nowlocated_city>
+    <nowlocated_city_id>
+      <Text>530</Text>
+      <Value>530</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </nowlocated_city_id>
+    <nowlocated_province>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </nowlocated_province>
+    <nowlocated_province_id>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </nowlocated_province_id>
+    <filed_200>
+      <Text>北京朝阳</Text>
+      <Value>北京朝阳</Value>
+      <FieldType>2</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_200>
+    <mobile_number>
+      <Text>15833778650</Text>
+      <Value>15833778650</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </mobile_number>
+    <email>
+      <Text>zz@qq.com</Text>
+      <Value>zz@qq.com</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </email>
+    <filed_248>
+      <Text>misi</Text>
+      <Value>misi</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_248>
+    <filed_249>
+      <Text>同事</Text>
+      <Value>4</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_249>
+    <filed_250>
+      <Text>1326018447</Text>
+      <Value>1326018447</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_250>
+  </person_info>
+  
+  
+  <education_experience>
+    <school_name>
+      <Text>北京大学</Text>
+      <Value>北京大学</Value>
+      <FieldType>8</FieldType>
+      <IsRequired>True</IsRequired>
+    </school_name>
+    <school_name_school_id>
+      <Text>1</Text>
+      <Value>1</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </school_name_school_id>
+    <education_degree>
+      <Text>大学本科</Text>
+      <Value>4</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </education_degree>
+    <education_level>
+      <Text>博士</Text>
+      <Value>1</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </education_level>
+    <major_name>
+      <Text>材料成型及控制工程</Text>
+      <Value>材料成型及控制工程</Value>
+      <FieldType>9</FieldType>
+      <IsRequired>True</IsRequired>
+    </major_name>
+    <major_name_major_id>
+      <Text>61</Text>
+      <Value>61</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </major_name_major_id>
+    <major_name_major_type>
+      <Text>材料类</Text>
+      <Value>材料类</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </major_name_major_type>
+    <major_name_major_type_id>
+      <Text>1</Text>
+      <Value>1</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </major_name_major_type_id>
+    <major_direction>
+      <Text>qqq</Text>
+      <Value>qqq</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </major_direction>
+    <edu_date_start>
+      <Text>2010-09-01</Text>
+      <Value>2010-09-01</Value>
+      <FieldType>6</FieldType>
+      <IsRequired>True</IsRequired>
+    </edu_date_start>
+    <edu_date_end>
+      <Text>2014-06-02</Text>
+      <Value>2014-06-02</Value>
+      <FieldType>6</FieldType>
+      <IsRequired>True</IsRequired>
+    </edu_date_end>
+    <edu_type>
+      <Text>定向</Text>
+      <Value>444</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </edu_type>
+    <college_name>
+      <Text>信息学院</Text>
+      <Value>信息学院</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </college_name>
+    <grade_rank>
+      <Text>前10%</Text>
+      <Value>47</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </grade_rank>
+    <main_course>
+      <Text>软件</Text>
+      <Value>软件</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </main_course>
+  </education_experience>
+  <education_experience>
+    <school_name>
+      <Text>中国人民大学</Text>
+      <Value>中国人民大学</Value>
+      <FieldType>8</FieldType>
+      <IsRequired>True</IsRequired>
+    </school_name>
+    <school_name_school_id>
+      <Text>2</Text>
+      <Value>2</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </school_name_school_id>
+    <education_degree>
+      <Text>大学专科</Text>
+      <Value>5</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </education_degree>
+    <education_level>
+      <Text>硕士</Text>
+      <Value>3</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </education_level>
+    <major_name>
+      <Text>材料成型及控制工程</Text>
+      <Value>材料成型及控制工程</Value>
+      <FieldType>9</FieldType>
+      <IsRequired>True</IsRequired>
+    </major_name>
+    <major_name_major_id>
+      <Text>61</Text>
+      <Value>61</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </major_name_major_id>
+    <major_name_major_type>
+      <Text>材料类</Text>
+      <Value>材料类</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </major_name_major_type>
+    <major_name_major_type_id>
+      <Text>1</Text>
+      <Value>1</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </major_name_major_type_id>
+    <major_direction>
+      <Text>11</Text>
+      <Value>11</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </major_direction>
+    <edu_date_start>
+      <Text>2010-09-03</Text>
+      <Value>2010-09-03</Value>
+      <FieldType>6</FieldType>
+      <IsRequired>True</IsRequired>
+    </edu_date_start>
+    <edu_date_end>
+      <Text>2014-06-02</Text>
+      <Value>2014-06-02</Value>
+      <FieldType>6</FieldType>
+      <IsRequired>True</IsRequired>
+    </edu_date_end>
+    <edu_type>
+      <Text>海外留学</Text>
+      <Value>222</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </edu_type>
+    <college_name>
+      <Text>1122</Text>
+      <Value>1122</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </college_name>
+    <grade_rank>
+      <Text>前30%</Text>
+      <Value>49</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </grade_rank>
+    <main_course>
+      <Text>1</Text>
+      <Value>1</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </main_course>
+  </education_experience>
+  <education_experience>
+    <school_name>
+      <Text />
+      <Value />
+      <FieldType>8</FieldType>
+      <IsRequired>True</IsRequired>
+    </school_name>
+    <school_name_school_id>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </school_name_school_id>
+    <education_degree>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </education_degree>
+    <education_level>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </education_level>
+    <major_name>
+      <Text />
+      <Value />
+      <FieldType>9</FieldType>
+      <IsRequired>True</IsRequired>
+    </major_name>
+    <major_name_major_id>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </major_name_major_id>
+    <major_name_major_type>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </major_name_major_type>
+    <major_name_major_type_id>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </major_name_major_type_id>
+    <major_direction>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </major_direction>
+    <edu_date_start>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>True</IsRequired>
+    </edu_date_start>
+    <edu_date_end>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>True</IsRequired>
+    </edu_date_end>
+    <edu_type>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </edu_type>
+    <college_name>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </college_name>
+    <grade_rank>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </grade_rank>
+    <main_course>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </main_course>
+  </education_experience>
+  <education_experience>
+    <school_name>
+      <Text />
+      <Value />
+      <FieldType>8</FieldType>
+      <IsRequired>True</IsRequired>
+    </school_name>
+    <school_name_school_id>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </school_name_school_id>
+    <education_degree>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </education_degree>
+    <education_level>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </education_level>
+    <major_name>
+      <Text />
+      <Value />
+      <FieldType>9</FieldType>
+      <IsRequired>True</IsRequired>
+    </major_name>
+    <major_name_major_id>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </major_name_major_id>
+    <major_name_major_type>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </major_name_major_type>
+    <major_name_major_type_id>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </major_name_major_type_id>
+    <major_direction>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </major_direction>
+    <edu_date_start>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>True</IsRequired>
+    </edu_date_start>
+    <edu_date_end>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>True</IsRequired>
+    </edu_date_end>
+    <edu_type>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </edu_type>
+    <college_name>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </college_name>
+    <grade_rank>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </grade_rank>
+    <main_course>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </main_course>
+  </education_experience>
+  <education_experience>
+    <school_name>
+      <Text />
+      <Value />
+      <FieldType>8</FieldType>
+      <IsRequired>True</IsRequired>
+    </school_name>
+    <school_name_school_id>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </school_name_school_id>
+    <education_degree>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </education_degree>
+    <education_level>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </education_level>
+    <major_name>
+      <Text />
+      <Value />
+      <FieldType>9</FieldType>
+      <IsRequired>True</IsRequired>
+    </major_name>
+    <major_name_major_id>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </major_name_major_id>
+    <major_name_major_type>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </major_name_major_type>
+    <major_name_major_type_id>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </major_name_major_type_id>
+    <major_direction>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </major_direction>
+    <edu_date_start>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>True</IsRequired>
+    </edu_date_start>
+    <edu_date_end>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>True</IsRequired>
+    </edu_date_end>
+    <edu_type>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </edu_type>
+    <college_name>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </college_name>
+    <grade_rank>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </grade_rank>
+    <main_course>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </main_course>
+  </education_experience>
+  
+  
+  <module_50>
+    <filed_207>
+      <Text>毕业设计题目</Text>
+      <Value>毕业设计题目</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_207>
+    <filed_261>
+      <Text>介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容</Text>
+      <Value>介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容介绍内容</Value>
+      <FieldType>2</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_261>
+  </module_50>
+  <module_62>
+    <filed_293>
+      <Text>单位一</Text>
+      <Value>单位一</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_293>
+    <filed_268>
+      <Text>2014-09-01</Text>
+      <Value>2014-09-01</Value>
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_268>
+    <filed_269>
+      <Text>2014-09-17</Text>
+      <Value>2014-09-17</Value>
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_269>
+    <filed_270>
+      <Text>其他全职</Text>
+      <Value>2</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_270>
+    <filed_210>
+      <Text>校学生会外资咨询公司</Text>
+      <Value>2</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_210>
+    <filed_271>
+      <Text>岗位一</Text>
+      <Value>岗位一</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_271>
+    <filed_272>
+      <Text>内容内容</Text>
+      <Value>内容内容</Value>
+      <FieldType>2</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_272>
+    <filed_273>
+      <Text>2000~4000元/月</Text>
+      <Value>4</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_273>
+  </module_62>
+  <module_62>
+    <filed_293>
+      <Text>单位二</Text>
+      <Value>单位二</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_293>
+    <filed_268>
+      <Text>2014-09-03</Text>
+      <Value>2014-09-03</Value>
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_268>
+    <filed_269>
+      <Text>2014-09-25</Text>
+      <Value>2014-09-25</Value>
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_269>
+    <filed_270>
+      <Text>兼职</Text>
+      <Value>3</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_270>
+    <filed_210>
+      <Text>院学生会金融机构</Text>
+      <Value>3</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_210>
+    <filed_271>
+      <Text>岗位二</Text>
+      <Value>岗位二</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_271>
+    <filed_272>
+      <Text>内容二内容二</Text>
+      <Value>内容二内容二</Value>
+      <FieldType>2</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_272>
+    <filed_273>
+      <Text>8000~10000元/月</Text>
+      <Value>7</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_273>
+  </module_62>
+  <module_62>
+    <filed_293>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_293>
+    <filed_268>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_268>
+    <filed_269>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_269>
+    <filed_270>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_270>
+    <filed_210>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_210>
+    <filed_271>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_271>
+    <filed_272>
+      <Text />
+      <Value />
+      <FieldType>2</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_272>
+    <filed_273>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_273>
+  </module_62>
+  <module_52>
+    <filed_275>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_275>
+    <references_position>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </references_position>
+    <filed_276>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_276>
+    <filed_277>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_277>
+    <filed_226>
+      <Text />
+      <Value />
+      <FieldType>2</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_226>
+  </module_52>
+  <module_52>
+    <filed_275>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_275>
+    <references_position>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </references_position>
+    <filed_276>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_276>
+    <filed_277>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_277>
+    <filed_226>
+      <Text />
+      <Value />
+      <FieldType>2</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_226>
+  </module_52>
+  <module_52>
+    <filed_275>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_275>
+    <references_position>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </references_position>
+    <filed_276>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_276>
+    <filed_277>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_277>
+    <filed_226>
+      <Text />
+      <Value />
+      <FieldType>2</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_226>
+  </module_52>
+  <module_66>
+    <filed_227>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_227>
+    <filed_229>
+      <Text />
+      <Value />
+      <FieldType>2</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_229>
+    <filed_299>
+      <Text />
+      <Value />
+      <FieldType>11</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_299>
+  </module_66>
+  <module_66>
+    <filed_227>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_227>
+    <filed_229>
+      <Text />
+      <Value />
+      <FieldType>2</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_229>
+    <filed_299>
+      <Text />
+      <Value />
+      <FieldType>11</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_299>
+  </module_66>
+  <module_66>
+    <filed_227>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_227>
+    <filed_229>
+      <Text />
+      <Value />
+      <FieldType>2</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_229>
+    <filed_299>
+      <Text />
+      <Value />
+      <FieldType>11</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_299>
+  </module_66>
+  <skill_favorite>
+    <filed_232>
+      <Text>100</Text>
+      <Value>100</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_232>
+    <filed_233>
+      <Text>100</Text>
+      <Value>100</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_233>
+    <filed_234>
+      <Text>100</Text>
+      <Value>100</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_234>
+    <filed_235>
+      <Text>英语6级</Text>
+      <Value>英语6级</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_235>
+    <computer_skill>
+      <Text>软件</Text>
+      <Value>软件</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </computer_skill>
+    <personal_favorite>
+      <Text>跑步</Text>
+      <Value>跑步</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </personal_favorite>
+    <filed_230>
+      <Text>跑步</Text>
+      <Value>跑步</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_230>
+    <filed_231>
+      <Text>无无无</Text>
+      <Value>无无无</Value>
+      <FieldType>2</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_231>
+  </skill_favorite>
+  <module_56>
+    <filed_236>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_236>
+    <filed_237>
+      <Text />
+      <Value />
+      <FieldType>2</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_237>
+    <filed_238>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_238>
+  </module_56>
+  <module_56>
+    <filed_236>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_236>
+    <filed_237>
+      <Text />
+      <Value />
+      <FieldType>2</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_237>
+    <filed_238>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_238>
+  </module_56>
+  <module_56>
+    <filed_236>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_236>
+    <filed_237>
+      <Text />
+      <Value />
+      <FieldType>2</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_237>
+    <filed_238>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_238>
+  </module_56>
+  <module_56>
+    <filed_236>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_236>
+    <filed_237>
+      <Text />
+      <Value />
+      <FieldType>2</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_237>
+    <filed_238>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_238>
+  </module_56>
+  <module_56>
+    <filed_236>
+      <Text />
+      <Value />
+      <FieldType>6</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_236>
+    <filed_237>
+      <Text />
+      <Value />
+      <FieldType>2</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_237>
+    <filed_238>
+      <Text />
+      <Value />
+      <FieldType>3</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_238>
+  </module_56>
+  <module_76>
+    <filed_298>
+      <Text>否</Text>
+      <Value>3</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_298>
+    <filed_296>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_296>
+    <filed_287>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_287>
+    <filed_289>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_289>
+    <filed_290>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_290>
+    <filed_297>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_297>
+    <filed_279>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_279>
+    <filed_281>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_281>
+    <filed_282>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_282>
+    <filed_288>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_288>
+    <filed_283>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_283>
+    <filed_285>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_285>
+    <filed_286>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_286>
+  </module_76>
+  <module_74>
+    <filed_280>
+      <Text>同事</Text>
+      <Value>同事</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_280>
+    <family_name>
+      <Text>同事一</Text>
+      <Value>同事一</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </family_name>
+    <company_name>
+      <Text>单位一</Text>
+      <Value>单位一</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </company_name>
+    <job_title>
+      <Text>职务一</Text>
+      <Value>职务一</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </job_title>
+  </module_74>
+  <module_74>
+    <filed_280>
+      <Text>同事</Text>
+      <Value>同事</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_280>
+    <family_name>
+      <Text>同事二</Text>
+      <Value>同事二</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </family_name>
+    <company_name>
+      <Text>单位二</Text>
+      <Value>单位二</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </company_name>
+    <job_title>
+      <Text>职务二</Text>
+      <Value>职务二</Value>
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </job_title>
+  </module_74>
+  <module_74>
+    <filed_280>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_280>
+    <family_name>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </family_name>
+    <company_name>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </company_name>
+    <job_title>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </job_title>
+  </module_74>
+  <module_74>
+    <filed_280>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_280>
+    <family_name>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </family_name>
+    <company_name>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </company_name>
+    <job_title>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </job_title>
+  </module_74>
+  <module_74>
+    <filed_280>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_280>
+    <family_name>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </family_name>
+    <company_name>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </company_name>
+    <job_title>
+      <Text />
+      <Value />
+      <FieldType>1</FieldType>
+      <IsRequired>True</IsRequired>
+    </job_title>
+  </module_74>
+  <job_desired>
+    <filed_243>
+      <Text>管理培训生</Text>
+      <Value>2</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_243>
+    <filed_266>
+      <Text>深圳</Text>
+      <Value>2</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_266>
+    <filed_267>
+      <Text>对公市场营销岗</Text>
+      <Value>3</Value>
+      <FieldType>5</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_267>
+    <filed_295>
+      <Text>深圳,惠州,珠海</Text>
+      <Value>1,2,3</Value>
+      <FieldType>5</FieldType>
+      <IsRequired>False</IsRequired>
+    </filed_295>
+    <filed_300>
+      <Text>1000~2000元/月</Text>
+      <Value>3</Value>
+      <FieldType>3</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_300>
+  </job_desired>
+  <module_61>
+    <filed_241>
+      <Text>自我评价一</Text>
+      <Value>自我评价一</Value>
+      <FieldType>2</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_241>
+    <filed_242>
+      <Text>内容内容内容内容内容内容内容内容</Text>
+      <Value>内容内容内容内容内容内容内容内容</Value>
+      <FieldType>2</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_242>
+  </module_61>
+  <comment_byself>
+    <filed_244>
+      <Text>想法想法</Text>
+      <Value>想法想法</Value>
+      <FieldType>2</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_244>
+    <filed_245>
+      <Text>内容内容内容内容</Text>
+      <Value>内容内容内容内容</Value>
+      <FieldType>2</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_245>
+  </comment_byself>
+  <photo_attach>
+    <work_photo_path>
+      <Text>/2014/11819/09/28/10302414909433251.jpg</Text>
+      <Value>/2014/11819/09/28/10302414909433251.jpg</Value>
+      <FieldType>10</FieldType>
+      <IsRequired>True</IsRequired>
+    </work_photo_path>
+    <filed_252>
+      <Text>/2014/11819/09/28/10302414909433956.jpg</Text>
+      <Value>/2014/11819/09/28/10302414909433956.jpg</Value>
+      <FieldType>10</FieldType>
+      <IsRequired>True</IsRequired>
+    </filed_252>
+  </photo_attach>
+</resume>

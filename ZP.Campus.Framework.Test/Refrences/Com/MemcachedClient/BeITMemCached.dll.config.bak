@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<configuration>
+  <configSections>
+    <section name="beitmemcached" type="System.Configuration.AppSettingsSection"/>
+    <section name="Logger" type="System.Configuration.DictionarySectionHandler"/>
+  </configSections>
+  <Logger key="zhaopin" value="zhaopin.com.ILogger"></Logger>
+  <beitmemcached>
+    <add key="Default" value="192.168.32.148:11211"/>
+    <add key="SendReceiveTimeout" value="500"/>
+    <add key="ConnectTimeout" value="1000"/>
+    <add key="MinPoolSize" value="1"/>
+    <add key="MaxPoolSize" value="10"/>
+    <add key="SocketRecycleAge" value="5"/>
+  </beitmemcached>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+  </startup>
+</configuration>

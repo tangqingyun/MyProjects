@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8DB735CF-D840-4427-862A-C029F6BEAAEB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZP.Campus.Framework.Core</RootNamespace>
+    <AssemblyName>ZP.Campus.Framework.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IBatisNet.Common">
+      <HintPath>..\Refrences\IBatis\IBatisNet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.DataMapper">
+      <HintPath>..\Refrences\IBatis\IBatisNet.DataMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Refrences\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zhaopin.PlatformOpen.Final">
+      <HintPath>..\Refrences\Zhaopin.PlatformOpen.Final.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\IKeyedObject.cs" />
+    <Compile Include="Collections\INamedObject.cs" />
+    <Compile Include="Collections\KeyedCollection.cs" />
+    <Compile Include="Collections\NamedCollection.cs" />
+    <Compile Include="Collections\NameObjectCollection.cs" />
+    <Compile Include="Common\ObjectCustomExtension.cs" />
+    <Compile Include="Common\StringExtensions.cs" />
+    <Compile Include="CustomSerializer\BinarySerializer.cs" />
+    <Compile Include="CustomSerializer\ISerialize.cs" />
+    <Compile Include="Data\MyBatisExtension.cs" />
+    <Compile Include="IO\BaseFile.cs" />
+    <Compile Include="IO\DirectoryExtension.cs" />
+    <Compile Include="IO\PathExtension.cs" />
+    <Compile Include="IO\ZipFile.cs" />
+    <Compile Include="Mail\EmailList.cs" />
+    <Compile Include="Mail\Mail.cs" />
+    <Compile Include="Mail\SendMail.cs" />
+    <Compile Include="MSMQ\Msmq.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoredProcedure\IStoredProcedure.cs" />
+    <Compile Include="StoredProcedure\StoredProcedureHelper.cs" />
+    <Compile Include="Utility\HashHelper.cs" />
+    <Compile Include="Web\HtmlHelper.cs" />
+    <Compile Include="Web\HttpUtils.cs" />
+    <Compile Include="Utility\MD5.cs" />
+    <Compile Include="Utility\SHA.cs" />
+    <Compile Include="Utility\StringHelper.cs" />
+    <Compile Include="Utility\Validator.cs" />
+    <Compile Include="Web\CookieUtils.cs" />
+    <Compile Include="Web\WebUtils.cs" />
+    <Compile Include="Xml\IMultiNamespaceObject.cs" />
+    <Compile Include="Xml\XmlConverter.cs" />
+    <Compile Include="Xml\XmlSerializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="File\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\CdcSqlMap.config" />
+    <None Include="Data\providers.config" />
+    <None Include="Data\SqlMap.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,15 @@
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.WinTool\bin\Debug\Site.360doc.WinTool.exe
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.WinTool\bin\Debug\Site.360doc.WinTool.pdb
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.WinTool\obj\Debug\Site.360doc.WinTool.csprojResolveAssemblyReference.cache
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.WinTool\obj\Debug\Site._360doc.WinTool.Main.resources
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.WinTool\obj\Debug\Site._360doc.WinTool.Properties.Resources.resources
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.WinTool\obj\Debug\Site.360doc.WinTool.csproj.GenerateResource.Cache
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.WinTool\obj\Debug\Site.360doc.WinTool.exe
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.WinTool\obj\Debug\Site.360doc.WinTool.pdb
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.WinTool\bin\Debug\ZP.Campus.Framework.Core.dll
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.WinTool\bin\Debug\Zhaopin.PlatformOpen.Final.dll
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.WinTool\bin\Debug\IBatisNet.DataMapper.dll
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.WinTool\bin\Debug\IBatisNet.Common.dll
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.WinTool\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.WinTool\bin\Debug\ZP.Campus.Framework.Core.pdb
+F:\qingyun.tang\MyProjects\ZP.Campus.Framework.Test\Site.360doc.WinTool\bin\Debug\Site.360doc.WinTool.exe.config
